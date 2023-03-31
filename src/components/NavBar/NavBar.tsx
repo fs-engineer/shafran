@@ -15,7 +15,7 @@ const menu: Array<IMenu> = [
 ];
 
 const NavBar = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <NavBarStyled>
