@@ -1,37 +1,30 @@
 import React from 'react';
-import { Menu, NavBarStyled } from './NavBar.styled';
+import { Menu, MenuItem, MenuLink, NavBarStyled } from './NavBar.styled';
 import { useTranslation } from 'react-i18next';
 
-const menu = [{ name: '' }];
+const menu = [
+    { name: 'menu.home', path: '/' },
+    { name: 'menu.contacts', path: 'contacts' },
+    { name: 'menu.about', path: 'about' },
+];
 
-type LangType = {
-    nativeName: string;
-};
+interface ILang {
+    [key: string]: string;
+}
 
-type Lang = {
-    en: LangType;
-    ua: LangType;
-    ru: LangType;
-};
-
-const languages: any = {
-    en: { nativeName: 'English' },
-    ua: { nativeName: 'Ukrainian' },
-    ru: { nativeName: 'Russian' },
+const languages: ILang = {
+    en: 'en',
+    ua: 'ua',
+    ru: 'ru',
 };
 
 const NavBar = () => {
     const { t, i18n } = useTranslation();
 
-    const changeLanguage = (lang: string) => {
-        i18n.changeLanguage(lang);
-    };
-    // console.log('update');
-
     return (
         <NavBarStyled>
             <h2>NavBar</h2>
-            <h3>{t('menu.home')}</h3>
+            <p>{t('about')}</p>
             {Object.keys(languages).map(lng => (
                 <button
                     type="submit"
@@ -39,10 +32,16 @@ const NavBar = () => {
                     onClick={() => i18n.changeLanguage(lng)}
                     disabled={i18n.resolvedLanguage === lng}
                 >
-                    {languages[lng].nativeName}
+                    {languages[lng]}
                 </button>
             ))}
-            <Menu></Menu>
+            <Menu>
+                {menu.map(({ name, path }) => (
+                    <MenuItem key={name}>
+                        <MenuLink to={path}>{t(`${name}`)}</MenuLink>
+                    </MenuItem>
+                ))}
+            </Menu>
         </NavBarStyled>
     );
 };
