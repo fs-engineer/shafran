@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'BadScript';
+    src: local('DancingScript'),
+        url('./assets/fonts/BadScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: local('DancingScript'),
+        url('./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf')
+            format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: local('DancingScript'),
+        url('./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf')
+            format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: 'OpenSans', sans-serif;
+}
