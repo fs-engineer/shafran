@@ -1,13 +1,17 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import { Home } from './pages/Home';
+import { Layout } from './components/Layout';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-    </div>
-  );
+    return (
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
+            </Route>
+        </Routes>
+    );
 }
 
 export default App;

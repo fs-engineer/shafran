@@ -1,12 +1,9 @@
 import React, { FC } from 'react';
+import { ChildrenProp } from '../../types';
+import { HeaderStyled } from './Header.styled';
 
-type Props = {
-    children: JSX.Element;
-    // children?: JSX.Element | JSX.Element[];
-};
-
-const Header: React.FC<Props> = ({ children }) => {
-    return <header>{children}</header>;
+const Header: FC<ChildrenProp> = ({ children }) => {
+    return <HeaderStyled>{children}</HeaderStyled>;
 };
 
 export default Header;
