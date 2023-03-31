@@ -1,20 +1,19 @@
 @font-face {
     font-family: 'BadScript';
     src: local('DancingScript'),
-        url('./assets/fonts/BadScript-Regular.ttf') format('truetype');
+        url('../fonts/BadScript-Regular.ttf') format('truetype');
     font-weight: normal;
 }
 @font-face {
     font-family: 'OpenSans';
     src: local('DancingScript'),
-        url('./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf')
-            format('truetype');
+        url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
     font-weight: normal;
 }
 @font-face {
     font-family: 'OpenSans';
     src: local('DancingScript'),
-        url('./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf')
+        url('../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf')
             format('truetype');
     font-weight: normal;
     font-style: italic;
@@ -22,4 +21,21 @@
 
 body {
     font-family: 'OpenSans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }

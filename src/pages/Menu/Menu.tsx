@@ -1,14 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const About = () => {
+const Menu = () => {
     const { t } = useTranslation();
-
     return (
-        <div>
-            <h2>{t('menu.about')}</h2>
+        <div style={{ backgroundColor: 'bisque' }}>
+            <h2>{t('menu.menu')}</h2>
         </div>
     );
 };
 
-export default About;
+export default Menu;

@@ -1,13 +1,13 @@
 import { FC } from 'react';
-import { Main } from '../../components/Main';
+import { useTranslation } from 'react-i18next';
 
 const Home: FC = () => {
+    const { t } = useTranslation();
+
     return (
-        <Main>
-            <div style={{ backgroundColor: 'bisque' }}>
-                <h2>Home</h2>
-            </div>
-        </Main>
+        <div>
+            <h2>{t('menu.home')}</h2>
+        </div>
     );
 };
 

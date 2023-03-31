@@ -1,13 +1,13 @@
 import React from 'react';
-import { Main } from '../../components/Main';
+import { useTranslation } from 'react-i18next';
 
 const Contacts = () => {
+    const { t } = useTranslation();
+
     return (
-        <Main>
-            <div style={{ backgroundColor: 'bisque' }}>
-                <h2>Contacts</h2>
-            </div>
-        </Main>
+        <div>
+            <h2>{t('menu.contacts')}</h2>
+        </div>
     );
 };
 

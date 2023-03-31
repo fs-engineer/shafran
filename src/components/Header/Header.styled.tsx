@@ -1,5 +1,3 @@
 import styled from 'styled-components';
 
-export const HeaderStyled = styled.header`
-    background-color: antiquewhite;
-`;
+export const HeaderStyled = styled.header``;
