@@ -8,4 +8,5 @@ export const HeaderStyled = styled.header`
     padding: 20px 0;
     width: 100%;
     background-color: ${({ theme }) => theme.background.greyTrans};
+    z-index: 9999;
 `;
