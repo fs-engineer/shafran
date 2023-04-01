@@ -1,15 +1,17 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Main } from '../../components/Main';
+import { Hero } from '../../components/Hero';
 import { LangSwitcher } from '../../components/LangSwitcher';
 
 const Home: FC = () => {
     const { t } = useTranslation();
 
     return (
-        <div>
-            <h2>{t('menu.home')}</h2>
+        <Main>
+            <Hero />
             <LangSwitcher />
-        </div>
+        </Main>
     );
 };
 
