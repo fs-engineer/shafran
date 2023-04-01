@@ -10,9 +10,9 @@ import platterImg from '../../assets/images/hero/platter_1920.jpg';
 import redWineImg from '../../assets/images/hero/red-wine_1920.jpg';
 
 const sliderData = [
-    { text: 'barbeque', src: barbecueImg },
     { text: 'dishes', src: platterImg },
     { text: 'bar', src: redWineImg },
+    { text: 'barbeque', src: barbecueImg },
     { text: 'banquet', src: cateringImg },
 ];
 

@@ -1,17 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-export const NavStyled = styled.nav`
-    //position: fixed;
-    //top: 20px;
-    //left: 50%;
-    //transform: translate(-50%, -50%);
-    //display: flex;
-    //justify-content: space-between;
-    //align-items: center;
-    //max-width: 1200px;
-    //padding: 20px;
-`;
+export const NavStyled = styled.nav``;
 export const Menu = styled.ul`
     display: flex;
     justify-content: space-between;

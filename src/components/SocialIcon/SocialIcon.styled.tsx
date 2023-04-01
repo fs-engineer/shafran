@@ -1,10 +1,16 @@
-import styled from 'styled-components';
+import styled, { DefaultTheme } from 'styled-components';
 
-export const IconBox = styled.div`
-    font-size: 1rem;
-    text-align: center;
-    width: 20px;
-    height: 20px;
+interface IIconBox {
+    theme: DefaultTheme;
+    size: number;
+}
+
+export const IconBox = styled.div<IIconBox>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: ${({ size }) => size}px;
+    height: ${({ size }) => size}px;
     background-color: white;
     border-radius: 50%;
     :not(:last-child) {

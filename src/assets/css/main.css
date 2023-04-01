@@ -8,14 +8,14 @@
     font-family: 'OpenSans';
     src: local('DancingScript'),
         url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 300;
 }
 @font-face {
     font-family: 'OpenSans';
     src: local('DancingScript'),
         url('../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf')
             format('truetype');
-    font-weight: normal;
+    font-weight: 300;
     font-style: italic;
 }
 

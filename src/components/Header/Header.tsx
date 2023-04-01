@@ -5,6 +5,21 @@ import { NavBar } from '../NavBar';
 import { SocialIcon } from '../SocialIcon';
 import { Container } from '../../common';
 import { useWindowSize } from '../../hooks/useWindowSize';
+import { BsInstagram } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
+
+const socialIcons = [
+    {
+        name: 'instagram',
+        icon: <BsInstagram />,
+        link: 'https://www.instagram.com/shafran_zt/',
+    },
+    {
+        name: 'facebook',
+        icon: <FaFacebookF />,
+        link: 'https://www.facebook.com/shafranzt/',
+    },
+];
 
 const Header: FC = () => {
     const { width } = useWindowSize();
@@ -16,9 +31,14 @@ const Header: FC = () => {
                 <Logo />
                 {isShowNav ? <NavBar /> : null!}
                 <div style={{ display: 'flex' }}>
-                    <SocialIcon />
-                    <SocialIcon />
-                    <SocialIcon />
+                    {socialIcons.map(({ name, icon, link }) => (
+                        <SocialIcon
+                            key={name}
+                            name={name}
+                            icon={icon}
+                            link={link}
+                        />
+                    ))}
                 </div>
             </Container>
         </HeaderStyled>
