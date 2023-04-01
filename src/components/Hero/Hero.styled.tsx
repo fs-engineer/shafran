@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { devSize } from '../../assets/devices';
 
 export const Wrapper = styled.div`
     width: 100%;
@@ -11,19 +12,26 @@ export const SliderTitle = styled.h3`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: ${({ theme }) => theme.font.light};
-
+    //color: ${({ theme }) => theme.font.light};
+    color: #fff;
     font-size: 1rem;
+    line-height: 1.3;
     font-family: OpenSans, sans-serif;
     font-style: italic;
     text-align: center;
-    width: 80%;
+    width: 90%;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${devSize.tablet}) {
         font-size: 1.5rem;
     }
 
-    @media (min-width: 1200px) {
-        font-size: 5rem;
+    @media (min-width: ${devSize.laptop}) {
+        font-size: 2.5rem;
+    }
+
+    @media (min-width: ${devSize.monitor}) {
+        font-size: 4rem;
     }
 `;
+
+export const Image = styled.img``;
