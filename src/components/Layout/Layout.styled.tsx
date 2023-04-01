@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
-export const LayoutStyled = styled.div`
+export const Wrapper = styled.div`
+    position: relative;
     color: ${({ theme }) => theme.font.dark}};
 `;

@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const NavStyled = styled.nav`
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    //position: fixed;
+    //top: 20px;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
     //display: flex;
     //justify-content: space-between;
     //align-items: center;
