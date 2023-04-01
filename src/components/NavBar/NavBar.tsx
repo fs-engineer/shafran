@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo, Menu, MenuItem, MenuLink, NavBarStyled } from './NavBar.styled';
+import { Menu, MenuItem, MenuLink, NavStyled } from './NavBar.styled';
 import { useTranslation } from 'react-i18next';
 
 interface IMenu {
@@ -18,8 +18,7 @@ const NavBar = () => {
     const { t } = useTranslation();
 
     return (
-        <NavBarStyled>
-            <Logo>Шафран</Logo>
+        <NavStyled>
             <Menu>
                 {menu.map(({ name, path }) => (
                     <MenuItem key={name}>
@@ -27,7 +26,7 @@ const NavBar = () => {
                     </MenuItem>
                 ))}
             </Menu>
-        </NavBarStyled>
+        </NavStyled>
     );
 };
 
