@@ -2,7 +2,6 @@
     "menu": {
         "home": "Home",
         "menu": "Our menu",
-        "about": "About",
-        "contacts": "Contacts"
+        "about": "About"
     }
 }

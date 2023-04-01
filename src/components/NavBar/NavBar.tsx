@@ -10,7 +10,6 @@ interface IMenu {
 const menu: Array<IMenu> = [
     { name: 'menu.home', path: '/' },
     { name: 'menu.menu', path: 'menu' },
-    { name: 'menu.contacts', path: 'contacts' },
     { name: 'menu.about', path: 'about' },
 ];
 
