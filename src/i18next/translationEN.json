@@ -3,5 +3,11 @@
         "home": "Home",
         "menu": "Our menu",
         "about": "About"
+    },
+    "hero": {
+        "barbeque": "Immerse yourself in the world of aromatic and juicy barbecue at our cozy restaurant!",
+        "banquet": "Discover our elegant banquet halls for weddings, corporate events, and special occasions.",
+        "dishes": "Taste the best dishes made of selected ingredients, perfectly paired with exquisite wines.",
+        "bar": "Our bar menu includes a variety of alcoholic and non-alcoholic drinks, from classic cocktails to unique signature mixes."
     }
 }

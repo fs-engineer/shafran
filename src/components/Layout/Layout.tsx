@@ -1,4 +1,4 @@
-import React, { FC, useRef } from 'react';
+import React, { FC } from 'react';
 import { Wrapper } from './Layout.styled';
 import { Header } from '../Header';
 import { Outlet } from 'react-router-dom';

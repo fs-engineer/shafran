@@ -6,7 +6,7 @@ import translationRU from './translationRU.json';
 
 i18n.use(initReactI18next).init({
     lng: 'ua', // if you're using a language detector, do not define the lng option
-    fallbackLng: 'en',
+    fallbackLng: 'ua',
     // debug: true,
     resources: {
         en: {
