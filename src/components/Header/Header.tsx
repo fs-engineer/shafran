@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { HeaderStyled } from './Header.styled';
+import { HeaderStyled, SocialWrapper } from './Header.styled';
 import { Logo } from '../Logo';
 import { NavBar } from '../NavBar';
 import { SocialIcon } from '../SocialIcon';
@@ -7,6 +7,7 @@ import { Container } from '../../common';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { BsPhone, BsInstagram } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
+import { LangSwitcher } from '../LangSwitcher';
 
 const socialIcons = [
     {
@@ -35,7 +36,7 @@ const Header: FC = () => {
             <Container>
                 <Logo />
                 {isShowNav ? <NavBar /> : null!}
-                <div style={{ display: 'flex' }}>
+                <SocialWrapper>
                     {socialIcons.map(({ name, icon, link }) => (
                         <SocialIcon
                             key={name}
@@ -44,7 +45,8 @@ const Header: FC = () => {
                             link={link}
                         />
                     ))}
-                </div>
+                    <LangSwitcher />
+                </SocialWrapper>
             </Container>
         </HeaderStyled>
     );

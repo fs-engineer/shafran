@@ -10,3 +10,6 @@ export const HeaderStyled = styled.header`
     background-color: ${({ theme }) => theme.background.greyTrans};
     z-index: 9999;
 `;
+export const SocialWrapper = styled.div`
+    display: flex;
+`;

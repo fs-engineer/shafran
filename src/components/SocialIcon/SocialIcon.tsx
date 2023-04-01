@@ -6,7 +6,7 @@ interface ISocialIcon {
     icon: JSX.Element;
     link: string;
 }
-const SocialIcon: FC<ISocialIcon> = ({ name, icon, link }) => {
+const SocialIcon: FC<ISocialIcon> = ({ icon, link }) => {
     return (
         <IconLink to={link} size={30} target="_blank">
             {icon}
