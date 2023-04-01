@@ -1,6 +1,9 @@
 import React from 'react';
-import { Wrapper } from './Hero.styled';
-import { Slider } from '../Slider';
+import SlickSlider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { useTranslation } from 'react-i18next';
+import { SlideBox, SliderTitle, Wrapper } from './Hero.styled';
 import barbecueImg from '../../assets/images/hero/barbecue_1920.jpg';
 import cateringImg from '../../assets/images/hero/catering_1920.jpg';
 import platterImg from '../../assets/images/hero/platter_1920.jpg';
@@ -21,13 +24,22 @@ const sliderSettings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
 };
 
 const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <Wrapper>
-            <Slider content={sliderData} settings={sliderSettings} />
+            <SlickSlider {...sliderSettings}>
+                {sliderData.map(({ text, src }) => (
+                    <SlideBox>
+                        <img src={src} alt="hero" />
+                        <SliderTitle>{t(`hero.${text}`)}</SliderTitle>
+                    </SlideBox>
+                ))}
+            </SlickSlider>
         </Wrapper>
     );
 };
