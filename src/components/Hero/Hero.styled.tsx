@@ -12,8 +12,7 @@ export const SliderTitle = styled.h3`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    //color: ${({ theme }) => theme.font.light};
-    color: #fff;
+    color: ${({ theme }) => theme.font.light};
     font-size: 1rem;
     line-height: 1.3;
     font-family: OpenSans, sans-serif;

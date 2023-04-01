@@ -17,7 +17,7 @@ const sliderData = [
 ];
 
 const sliderSettings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     speed: 500,

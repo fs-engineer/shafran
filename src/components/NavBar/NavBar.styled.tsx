@@ -20,7 +20,7 @@ export const MenuItem = styled.li`
         position: absolute;
         width: 12px;
         height: 12px;
-        border: 1px solid ${({ theme }) => theme.background.cyan};
+        border: 1px solid ${({ theme }) => theme.background.white};
         border-width: 0 0 3px 3px;
         border-radius: 5px;
         transition: 0.5s;

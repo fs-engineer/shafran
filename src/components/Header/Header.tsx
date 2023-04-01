@@ -5,7 +5,7 @@ import { NavBar } from '../NavBar';
 import { SocialIcon } from '../SocialIcon';
 import { Container } from '../../common';
 import { useWindowSize } from '../../hooks/useWindowSize';
-import { BsInstagram } from 'react-icons/bs';
+import { BsPhone, BsInstagram } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 
 const socialIcons = [
@@ -18,6 +18,11 @@ const socialIcons = [
         name: 'facebook',
         icon: <FaFacebookF />,
         link: 'https://www.facebook.com/shafranzt/',
+    },
+    {
+        name: 'phone',
+        icon: <BsPhone />,
+        link: 'tel:+380682894490',
     },
 ];
 

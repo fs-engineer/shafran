@@ -1,11 +1,13 @@
 import styled, { DefaultTheme } from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 interface IIconBox {
     theme: DefaultTheme;
     size: number;
 }
 
-export const IconBox = styled.div<IIconBox>`
+export const IconLink = styled(NavLink)<IIconBox>`
+    color: ${({ theme }) => theme.font.dark};
     display: flex;
     justify-content: center;
     align-items: center;

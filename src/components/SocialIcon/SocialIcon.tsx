@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { IconBox } from './SocialIcon.styled';
+import { IconLink } from './SocialIcon.styled';
 
 interface ISocialIcon {
     name: string;
@@ -7,7 +7,11 @@ interface ISocialIcon {
     link: string;
 }
 const SocialIcon: FC<ISocialIcon> = ({ name, icon, link }) => {
-    return <IconBox size={30}>{icon}</IconBox>;
+    return (
+        <IconLink to={link} size={30} target="_blank">
+            {icon}
+        </IconLink>
+    );
 };
 
 export default SocialIcon;
