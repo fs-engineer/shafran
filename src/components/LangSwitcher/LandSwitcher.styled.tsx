@@ -4,7 +4,8 @@ export const Button = styled.button`
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: white;
+    border: 1px solid ${({ theme }) => theme.font.light};
+    color: ${({ theme }) => theme.font.light};
     cursor: pointer;
-    border: none;
+    background: transparent;
 `;

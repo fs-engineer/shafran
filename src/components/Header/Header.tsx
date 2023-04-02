@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { HeaderStyled, SocialWrapper } from './Header.styled';
+import { HeaderStyled, SocialItem, SocialList } from './Header.styled';
 import { Logo } from '../Logo';
 import { NavBar } from '../NavBar';
 import { SocialIcon } from '../SocialIcon';
@@ -8,6 +8,7 @@ import { useWindowSize } from '../../hooks/useWindowSize';
 import { BsPhone, BsInstagram } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import { LangSwitcher } from '../LangSwitcher';
+import { Tooltip } from '../Tooltip';
 
 const socialIcons = [
     {
@@ -36,17 +37,25 @@ const Header: FC = () => {
             <Container>
                 <Logo />
                 {isShowNav ? <NavBar /> : null!}
-                <SocialWrapper>
+                <SocialList>
                     {socialIcons.map(({ name, icon, link }) => (
-                        <SocialIcon
-                            key={name}
-                            name={name}
-                            icon={icon}
-                            link={link}
-                        />
+                        <SocialItem key={name}>
+                            <Tooltip text={name}>
+                                <SocialIcon
+                                    key={name}
+                                    name={name}
+                                    icon={icon}
+                                    link={link}
+                                />
+                            </Tooltip>
+                        </SocialItem>
                     ))}
-                    <LangSwitcher />
-                </SocialWrapper>
+                    <SocialItem>
+                        <Tooltip text={'language'}>
+                            <LangSwitcher />
+                        </Tooltip>
+                    </SocialItem>
+                </SocialList>
             </Container>
         </HeaderStyled>
     );

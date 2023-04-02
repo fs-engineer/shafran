@@ -13,9 +13,7 @@ export const IconLink = styled(NavLink)<IIconBox>`
     align-items: center;
     width: ${({ size }) => size}px;
     height: ${({ size }) => size}px;
-    background-color: white;
+    border: 1px solid ${({ theme }) => theme.background.white};
+    color: ${({ theme }) => theme.background.white};
     border-radius: 50%;
-    :not(:last-child) {
-        margin-right: 10px;
-    }
 `;
