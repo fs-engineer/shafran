@@ -3,11 +3,12 @@ import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useTranslation } from 'react-i18next';
-import { Image, SlideBox, SliderTitle, Wrapper } from './Hero.styled';
+import { Image, SlideBox, SliderTitle } from './Hero.styled';
 import barbecueImg from '../../assets/images/hero/barbecue_1920.jpg';
 import cateringImg from '../../assets/images/hero/catering_1920.jpg';
 import platterImg from '../../assets/images/hero/platter_1920.jpg';
 import redWineImg from '../../assets/images/hero/red-wine_1920.jpg';
+import { Section } from '../../common';
 
 const sliderData = [
     { text: 'dishes', src: platterImg },
@@ -32,7 +33,7 @@ const Hero = () => {
     const { t } = useTranslation();
 
     return (
-        <Wrapper>
+        <Section>
             <SlickSlider {...sliderSettings}>
                 {sliderData.map(({ text, src }) => (
                     <SlideBox key={text}>
@@ -41,7 +42,7 @@ const Hero = () => {
                     </SlideBox>
                 ))}
             </SlickSlider>
-        </Wrapper>
+        </Section>
     );
 };
 

@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { devSize } from '../../assets/devices';
 
-export const Wrapper = styled.div`
-    width: 100%;
-`;
 export const SlideBox = styled.div`
     position: relative;
 `;
