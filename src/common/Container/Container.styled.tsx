@@ -1,14 +1,19 @@
 import styled, { DefaultTheme } from 'styled-components';
+import { IContainerProps } from './Container';
 
-interface IBoxProps {
+interface IBoxProps extends IContainerProps {
     theme: DefaultTheme;
-    directionV?: boolean;
+    flexDirectionV?: boolean;
 }
 export const Box = styled.div<IBoxProps>`
     display: flex;
     justify-content: ${props =>
-        props.directionV ? 'center' : 'space-between'};
+        props.flexDirectionV ? 'center' : 'space-between'};
     align-items: center;
-    flex-direction: ${props => (props.directionV ? 'column' : 'row')};
+    flex-direction: ${props => (props.flexDirectionV ? 'column' : 'row')};
     flex-basis: 1200px;
+    padding: ${({ padding }) => {
+        console.log(padding, 'padding');
+        return padding;
+    }};
 `;

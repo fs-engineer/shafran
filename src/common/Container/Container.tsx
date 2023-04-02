@@ -2,11 +2,13 @@ import React, { FC } from 'react';
 import { ChildrenProp } from '../../types';
 import { Box } from './Container.styled';
 
-interface IProps extends ChildrenProp {
-    directionV?: boolean;
+export interface IContainerProps extends ChildrenProp {
+    flexDirectionV?: boolean;
+    padding?: string;
 }
-const Container: FC<IProps> = ({ children }) => {
-    return <Box>{children}</Box>;
+
+const Container: FC<IContainerProps> = ({ children, padding = '0 0 0 0' }) => {
+    return <Box padding={padding}>{children}</Box>;
 };
 
 export default Container;
