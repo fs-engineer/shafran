@@ -9,6 +9,7 @@ import { BsPhone, BsInstagram } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
 import { LangSwitcher } from '../LangSwitcher';
 import { Tooltip } from '../Tooltip';
+import { useTranslation } from 'react-i18next';
 
 const socialIcons = [
     {
@@ -31,6 +32,7 @@ const socialIcons = [
 const Header: FC = () => {
     const { width } = useWindowSize();
     const isShowNav = width > 768;
+    const { t } = useTranslation();
 
     return (
         <HeaderStyled>
@@ -51,7 +53,7 @@ const Header: FC = () => {
                         </SocialItem>
                     ))}
                     <SocialItem>
-                        <Tooltip text={'language'}>
+                        <Tooltip text={t('lang')}>
                             <LangSwitcher />
                         </Tooltip>
                     </SocialItem>
