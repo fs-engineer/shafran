@@ -13,7 +13,7 @@ export const List = styled.ul`
     align-items: center;
     justify-content: space-between;
 
-    @media (min-width: ${devSize.mobilePro}px) {
+    @media (min-width: ${devSize.tablet}px) {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -29,7 +29,7 @@ export const ListItem = styled.li`
         margin-bottom: 20px;
     }
 
-    @media (min-width: ${devSize.mobilePro}px) {
+    @media (min-width: ${devSize.tablet}px) {
         text-align: left;
         :not(:last-child) {
             margin-bottom: 0;
