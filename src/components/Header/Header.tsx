@@ -1,15 +1,17 @@
 import React, { FC } from 'react';
 import { HeaderStyled, SocialItem, SocialList } from './Header.styled';
+import { useTranslation } from 'react-i18next';
+import { BsPhone, BsInstagram } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
+import { IoLocationOutline } from 'react-icons/io5';
+
+import { LangSwitcher } from '../LangSwitcher';
 import { Logo } from '../Logo';
 import { NavBar } from '../NavBar';
 import { SocialIcon } from '../SocialIcon';
 import { Container } from '../../common';
 import { useWindowSize } from '../../hooks/useWindowSize';
-import { BsPhone, BsInstagram } from 'react-icons/bs';
-import { FaFacebookF } from 'react-icons/fa';
-import { LangSwitcher } from '../LangSwitcher';
 import { Tooltip } from '../Tooltip';
-import { useTranslation } from 'react-i18next';
 
 const socialIcons = [
     {
@@ -26,6 +28,11 @@ const socialIcons = [
         name: 'phone',
         icon: <BsPhone />,
         link: 'tel:+380682894490',
+    },
+    {
+        name: 'map',
+        icon: <IoLocationOutline />,
+        link: 'https://goo.gl/maps/NRGaWpnmpgsfoNw8A',
     },
 ];
 
