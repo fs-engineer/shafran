@@ -1,10 +1,16 @@
 import React from 'react';
 import { FooterStyled } from './Footer.styled';
+import { Address } from '../Address';
+import { ContactDetails } from '../ContactDetails';
+import { Logo } from '../Logo';
 
 const Footer = () => {
     return (
         <FooterStyled>
-            <h2>Footer</h2>
+            <Logo />
+            <ContactDetails />
+            {/*<GoogleMap />*/}
+            <Address />
         </FooterStyled>
     );
 };

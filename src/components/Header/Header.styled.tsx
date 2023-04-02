@@ -10,11 +10,3 @@ export const HeaderStyled = styled.header`
     background-color: ${({ theme }) => theme.background.greyTrans};
     z-index: 9999;
 `;
-export const SocialList = styled.ul`
-    display: flex;
-`;
-export const SocialItem = styled.li`
-    :not(:last-child) {
-        margin-right: 10px;
-    }
-`;
