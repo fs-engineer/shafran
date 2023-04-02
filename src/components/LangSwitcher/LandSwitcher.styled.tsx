@@ -8,4 +8,8 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.font.light};
     cursor: pointer;
     background: transparent;
+
+    :hover {
+        background-color: rgba(255, 255, 255, 0.46);
+    }
 `;

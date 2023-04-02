@@ -15,4 +15,8 @@ export const IconLink = styled(NavLink)<IIconBox>`
     border: 1px solid ${({ theme }) => theme.background.white};
     color: ${({ theme }) => theme.font.light};
     border-radius: 50%;
+
+    :hover {
+        background-color: rgba(255, 255, 255, 0.56);
+    }
 `;
