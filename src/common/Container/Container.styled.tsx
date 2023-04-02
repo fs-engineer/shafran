@@ -3,7 +3,7 @@ import { IContainerProps } from './Container';
 
 interface IBoxProps extends IContainerProps {
     theme: DefaultTheme;
-    flexDirectionV?: boolean;
+    flexDirection?: boolean;
 }
 export const Box = styled.div<IBoxProps>`
     display: flex;

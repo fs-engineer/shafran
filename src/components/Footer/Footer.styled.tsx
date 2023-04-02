@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import { devSize } from '../../assets/devices';
 
 export const FooterStyled = styled.footer`
-    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
     width: 100%;
     background-color: ${({ theme }) => theme.background.greyTrans};
 `;
@@ -15,7 +18,7 @@ export const List = styled.ul`
 
     @media (min-width: ${devSize.tablet}px) {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 `;
