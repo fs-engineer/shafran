@@ -1,16 +1,22 @@
 import React from 'react';
-import { FooterStyled } from './Footer.styled';
+import { FooterStyled, List, ListItem } from './Footer.styled';
 import { Address } from '../Address';
 import { ContactDetails } from '../ContactDetails';
 import { Logo } from '../Logo';
+import { Container } from '../../common';
+
+const footerList = [<Logo />, <ContactDetails />, <Address />];
 
 const Footer = () => {
     return (
         <FooterStyled>
-            <Logo />
-            <ContactDetails />
-            {/*<GoogleMap />*/}
-            <Address />
+            <Container>
+                <List>
+                    {footerList.map((el, idx) => (
+                        <ListItem key={idx}>{el}</ListItem>
+                    ))}
+                </List>
+            </Container>
         </FooterStyled>
     );
 };

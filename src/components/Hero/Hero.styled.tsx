@@ -20,15 +20,15 @@ export const SliderTitle = styled.h3`
     text-align: center;
     width: 90%;
 
-    @media (min-width: ${devSize.tablet}) {
+    @media (min-width: ${devSize.tablet}px) {
         font-size: 1.5rem;
     }
 
-    @media (min-width: ${devSize.laptop}) {
+    @media (min-width: ${devSize.laptop}px) {
         font-size: 2.5rem;
     }
 
-    @media (min-width: ${devSize.monitor}) {
+    @media (min-width: ${devSize.monitor}px) {
         font-size: 4rem;
     }
 `;

@@ -1,5 +1,6 @@
 export const devSize = {
-    tablet: '768px',
-    laptop: '1024px',
-    monitor: '1200px',
+    mobilePro: '590',
+    tablet: '768',
+    laptop: '1024',
+    monitor: '1200',
 };
