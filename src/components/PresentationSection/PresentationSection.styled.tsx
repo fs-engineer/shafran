@@ -10,6 +10,11 @@ export const Title = styled.h2`
 `;
 export const Description = styled.div`
     max-width: 400px;
+    margin-bottom: 30px;
+
+    @media (min-width: ${devSize.laptop}px) {
+        margin-bottom: 0;
+    }
 `;
 export const DecoratedSection = styled(SectionStyled)`
     display: flex;
@@ -23,15 +28,29 @@ export const AccentName = styled.span`
     color: #ffa600;
 `;
 export const SliderWrapper = styled.div`
-    max-width: 280px;
+    max-width: 260px;
 
     @media (min-width: ${devSize.tablet}px) {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        max-width: 400px;
+    }
+
+    @media (min-width: ${devSize.laptop}px) {
+        max-width: 600px;
     }
 `;
 
 export const Image = styled.img`
     border: 10px solid transparent;
+`;
+export const MediaWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: ${devSize.laptop}px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 `;

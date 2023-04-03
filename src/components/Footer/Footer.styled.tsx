@@ -5,7 +5,7 @@ export const FooterStyled = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px 0;
     width: 100%;
     background-color: ${({ theme }) => theme.background.greyTrans};
 `;

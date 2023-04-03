@@ -7,6 +7,7 @@ import { Container } from '../../common';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { ContactDetails } from '../ContactDetails';
 import { LogoWrapper } from '../Logo/Logo.styled';
+import { FlexMediaWrapper } from '../../common/FlexMediaWrapper';
 
 const Header: FC = () => {
     const { width } = useWindowSize();
@@ -15,11 +16,13 @@ const Header: FC = () => {
     return (
         <HeaderStyled>
             <Container>
-                <LogoWrapper>
-                    <Logo />
-                </LogoWrapper>
-                {isShowNav ? <NavBar /> : null!}
-                <ContactDetails />
+                <FlexMediaWrapper>
+                    <LogoWrapper>
+                        <Logo />
+                    </LogoWrapper>
+                    {isShowNav ? <NavBar /> : null!}
+                    <ContactDetails />
+                </FlexMediaWrapper>
             </Container>
         </HeaderStyled>
     );

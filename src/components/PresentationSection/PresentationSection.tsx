@@ -7,6 +7,7 @@ import {
     AccentName,
     SliderWrapper,
     Image,
+    MediaWrapper,
 } from './PresentationSection.styled';
 import { useTranslation } from 'react-i18next';
 import SlickSlider from 'react-slick';
@@ -19,6 +20,7 @@ import vintage from '../../assets/images/history/vintage_1920.jpg';
 import woman from '../../assets/images/history/woman_1920.jpg';
 import NextArrow from './NextArrow/NextArrow';
 import PrevArrow from './PrevArrow/PrevArrow';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 interface IPresentationProps {
     description: string;
@@ -48,27 +50,30 @@ const PresentationSection: FC<IPresentationProps> = ({
     title,
 }) => {
     const { t } = useTranslation();
+    const { width } = useWindowSize();
 
     return (
         <DecoratedSection>
             <Container padding={'100px 20px 100px 20px'}>
-                <Description>
-                    <Title>{t(title)}</Title>
-                    <Text fontStyle={'italic'} size={1.5}>
-                        <AccentName>Шафран</AccentName>
-                        {t(description)}
-                    </Text>
-                </Description>
+                <MediaWrapper>
+                    <Description>
+                        <Title>{t(title)}</Title>
+                        <Text fontStyle={'italic'} size={width > 767 ? 1.5 : 1}>
+                            <AccentName>Шафран</AccentName>
+                            {t(description)}
+                        </Text>
+                    </Description>
 
-                <SliderWrapper>
-                    <SlickSlider {...sliderSettings}>
-                        {sliderData.map(({ src, name }) => (
-                            <div key={name}>
-                                <Image src={src} alt={name} />
-                            </div>
-                        ))}
-                    </SlickSlider>
-                </SliderWrapper>
+                    <SliderWrapper>
+                        <SlickSlider {...sliderSettings}>
+                            {sliderData.map(({ src, name }) => (
+                                <div key={name}>
+                                    <Image src={src} alt={name} />
+                                </div>
+                            ))}
+                        </SlickSlider>
+                    </SliderWrapper>
+                </MediaWrapper>
             </Container>
         </DecoratedSection>
     );

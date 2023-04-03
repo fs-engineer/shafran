@@ -4,6 +4,7 @@ import { Address } from '../Address';
 import { ContactDetails } from '../ContactDetails';
 import { Logo } from '../Logo';
 import { Container } from '../../common';
+import { FlexMediaWrapper } from '../../common/FlexMediaWrapper';
 
 const footerList = [<Logo />, <ContactDetails />, <Address />];
 
@@ -11,11 +12,13 @@ const Footer = () => {
     return (
         <FooterStyled>
             <Container>
-                <List>
-                    {footerList.map((el, idx) => (
-                        <ListItem key={idx}>{el}</ListItem>
-                    ))}
-                </List>
+                <FlexMediaWrapper>
+                    <List>
+                        {footerList.map((el, idx) => (
+                            <ListItem key={idx}>{el}</ListItem>
+                        ))}
+                    </List>
+                </FlexMediaWrapper>
             </Container>
         </FooterStyled>
     );
