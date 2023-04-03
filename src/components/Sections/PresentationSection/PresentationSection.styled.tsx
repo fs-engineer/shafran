@@ -1,12 +1,7 @@
 import styled from 'styled-components';
-import { SectionStyled } from '../../../common/Section/Section.styled';
 import { devSize } from '../../../assets/devices';
 import { FlexMediaWrapper } from '../../../common/FlexMediaWrapper';
 
-export const Section = styled(SectionStyled)`
-    display: flex;
-    justify-content: center;
-`;
 export const SliderWrapper = styled.div`
     max-width: 260px;
 

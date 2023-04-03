@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { Container } from '../../../common';
 import {
-    Section,
     SliderWrapper,
     Image,
     MediaWrapper,
@@ -17,6 +16,9 @@ import woman from '../../../assets/images/history/woman_1920.jpg';
 import NextArrow from './NextArrow/NextArrow';
 import PrevArrow from './PrevArrow/PrevArrow';
 import { Description } from '../Description';
+import { Section } from '../Section';
+import { useWindowSize } from '../../../hooks/useWindowSize';
+import { devSize } from '../../../assets/devices';
 
 const sliderData = [
     { name: 'bar', src: bar },
@@ -37,9 +39,14 @@ const sliderSettings = {
 };
 
 const PresentationSection: FC = () => {
+    const { width } = useWindowSize();
+    const padding =
+        width < devSize.tablet
+            ? '50px 20px 50px 20px'
+            : '100px 20px 100px 20px';
     return (
         <Section>
-            <Container padding={'100px 20px 100px 20px'}>
+            <Container padding={padding}>
                 <MediaWrapper>
                     <Description
                         description="sections.ourHistory"
