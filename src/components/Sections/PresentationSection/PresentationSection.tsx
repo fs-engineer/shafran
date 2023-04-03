@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Container, Text } from '../../common';
+import { Container, Text } from '../../../common';
 import {
     DecoratedSection,
     Description,
@@ -12,15 +12,15 @@ import {
 import { useTranslation } from 'react-i18next';
 import SlickSlider from 'react-slick';
 
-import bar from '../../assets/images/history/bar_1920.jpg';
-import bistro from '../../assets/images/history/bistro_1920.jpg';
-import breakfast from '../../assets/images/history/breakfast_1920.jpg';
-import service from '../../assets/images/history/service_1920.jpg';
-import vintage from '../../assets/images/history/vintage_1920.jpg';
-import woman from '../../assets/images/history/woman_1920.jpg';
+import bar from '../../../assets/images/history/bar_1920.jpg';
+import bistro from '../../../assets/images/history/bistro_1920.jpg';
+import breakfast from '../../../assets/images/history/breakfast_1920.jpg';
+import service from '../../../assets/images/history/service_1920.jpg';
+import vintage from '../../../assets/images/history/vintage_1920.jpg';
+import woman from '../../../assets/images/history/woman_1920.jpg';
 import NextArrow from './NextArrow/NextArrow';
 import PrevArrow from './PrevArrow/PrevArrow';
-import { useWindowSize } from '../../hooks/useWindowSize';
+import { useWindowSize } from '../../../hooks/useWindowSize';
 
 interface IPresentationProps {
     description: string;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { SectionStyled } from '../../common/Section/Section.styled';
-import { devSize } from '../../assets/devices';
+import { SectionStyled } from '../../../common/Section/Section.styled';
+import { devSize } from '../../../assets/devices';
 
 export const Title = styled.h2`
     font-family: BadScript, sans-serif;

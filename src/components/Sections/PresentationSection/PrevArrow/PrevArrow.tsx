@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Wrapper } from './PrevArrow.styled';
-import { PrevNextArrow } from '../../../common/PrevNextArrow';
+import { PrevNextArrow } from '../../../../common/PrevNextArrow';
 
 interface IProps {
     onClick?: () => void;
