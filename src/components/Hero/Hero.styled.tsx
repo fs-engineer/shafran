@@ -29,5 +29,3 @@ export const SliderTitle = styled.h3`
         font-size: 4rem;
     }
 `;
-
-export const Image = styled.img``;

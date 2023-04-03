@@ -3,7 +3,7 @@ import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useTranslation } from 'react-i18next';
-import { Image, SlideBox, SliderTitle } from './Hero.styled';
+import { SlideBox, SliderTitle } from './Hero.styled';
 import barbecueImg from '../../assets/images/hero/barbecue_1920.jpg';
 import cateringImg from '../../assets/images/hero/catering_1920.jpg';
 import platterImg from '../../assets/images/hero/platter_1920.jpg';
@@ -37,7 +37,7 @@ const Hero = () => {
             <SlickSlider {...sliderSettings}>
                 {sliderData.map(({ text, src }) => (
                     <SlideBox key={text}>
-                        <Image src={src} alt={text} />
+                        <img src={src} alt={text} />
                         <SliderTitle>{t(`hero.${text}`)}</SliderTitle>
                     </SlideBox>
                 ))}

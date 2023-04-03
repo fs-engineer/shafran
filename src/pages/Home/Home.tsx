@@ -9,7 +9,7 @@ const Home: FC = () => {
             <Hero />
             <PresentationSection
                 description="presentation.ourHistory"
-                title="Наша история"
+                title="presentation.ourHistoryTitle"
             />
         </Main>
     );

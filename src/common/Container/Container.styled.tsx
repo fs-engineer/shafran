@@ -12,8 +12,5 @@ export const Box = styled.div<IBoxProps>`
     align-items: center;
     flex-direction: ${props => (props.flexDirectionV ? 'column' : 'row')};
     flex-basis: 1200px;
-    padding: ${({ padding }) => {
-        console.log(padding, 'padding');
-        return padding;
-    }};
+    padding: ${({ padding }) => padding};
 `;

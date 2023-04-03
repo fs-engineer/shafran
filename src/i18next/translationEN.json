@@ -13,6 +13,7 @@
         "bar": "Our bar menu includes a variety of alcoholic and non-alcoholic drinks, from classic cocktails to unique signature mixes."
     },
     "presentation": {
-        "ourHistory": "Shafan is a European cuisine restaurant located in the heart of Zhytomyr. Our story began in 2010 when a group of food enthusiasts decided to open a place where people could enjoy delicious food and a cozy atmosphere. Initially, it was a small restaurant, but over time, it grew into one of the most popular places in the city. Our chefs use only the freshest ingredients to create dishes that combine traditional European recipes with a modern approach. We take pride in offering our guests a unique culinary experience that they will never forget."
+        "ourHistoryTitle": "A brief history of us",
+        "ourHistory": " - is a European cuisine restaurant located in the heart of Zhytomyr. Our story began in 2010 when a group of food enthusiasts decided to open a place where people could enjoy delicious food and a cozy atmosphere."
     }
 }
