@@ -7,10 +7,7 @@ const Home: FC = () => {
     return (
         <Main>
             <Hero />
-            <PresentationSection
-                description="presentation.ourHistory"
-                title="presentation.ourHistoryTitle"
-            />
+            <PresentationSection />
         </Main>
     );
 };

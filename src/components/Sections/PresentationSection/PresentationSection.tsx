@@ -1,15 +1,11 @@
 import React, { FC } from 'react';
-import { Container, Text } from '../../../common';
+import { Container } from '../../../common';
 import {
-    DecoratedSection,
-    Description,
-    Title,
-    AccentName,
+    Section,
     SliderWrapper,
     Image,
     MediaWrapper,
 } from './PresentationSection.styled';
-import { useTranslation } from 'react-i18next';
 import SlickSlider from 'react-slick';
 
 import bar from '../../../assets/images/history/bar_1920.jpg';
@@ -20,12 +16,7 @@ import vintage from '../../../assets/images/history/vintage_1920.jpg';
 import woman from '../../../assets/images/history/woman_1920.jpg';
 import NextArrow from './NextArrow/NextArrow';
 import PrevArrow from './PrevArrow/PrevArrow';
-import { useWindowSize } from '../../../hooks/useWindowSize';
-
-interface IPresentationProps {
-    description: string;
-    title: string;
-}
+import { Description } from '../Description';
 
 const sliderData = [
     { name: 'bar', src: bar },
@@ -45,25 +36,15 @@ const sliderSettings = {
     prevArrow: <PrevArrow />,
 };
 
-const PresentationSection: FC<IPresentationProps> = ({
-    description,
-    title,
-}) => {
-    const { t } = useTranslation();
-    const { width } = useWindowSize();
-
+const PresentationSection: FC = () => {
     return (
-        <DecoratedSection>
+        <Section>
             <Container padding={'100px 20px 100px 20px'}>
                 <MediaWrapper>
-                    <Description>
-                        <Title>{t(title)}</Title>
-                        <Text fontStyle={'italic'} size={width > 767 ? 1.5 : 1}>
-                            <AccentName>Шафран</AccentName>
-                            {t(description)}
-                        </Text>
-                    </Description>
-
+                    <Description
+                        description="presentation.ourHistory"
+                        title="presentation.ourHistoryTitle"
+                    />
                     <SliderWrapper>
                         <SlickSlider {...sliderSettings}>
                             {sliderData.map(({ src, name }) => (
@@ -75,7 +56,7 @@ const PresentationSection: FC<IPresentationProps> = ({
                     </SliderWrapper>
                 </MediaWrapper>
             </Container>
-        </DecoratedSection>
+        </Section>
     );
 };
 
