@@ -6,7 +6,10 @@ export const MediaWrapper = styled.div`
     align-items: center;
 `;
 export const List = styled.ul`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 `;
 export const ListItem = styled.li`
     padding: 10px;
