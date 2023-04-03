@@ -9,6 +9,7 @@ import {
     Image,
 } from './PresentationSection.styled';
 import { useTranslation } from 'react-i18next';
+import SlickSlider from 'react-slick';
 
 import bar from '../../assets/images/history/bar_1920.jpg';
 import bistro from '../../assets/images/history/bistro_1920.jpg';
@@ -16,7 +17,8 @@ import breakfast from '../../assets/images/history/breakfast_1920.jpg';
 import service from '../../assets/images/history/service_1920.jpg';
 import vintage from '../../assets/images/history/vintage_1920.jpg';
 import woman from '../../assets/images/history/woman_1920.jpg';
-import SlickSlider from 'react-slick';
+import NextArrow from './NextArrow/NextArrow';
+import PrevArrow from './PrevArrow/PrevArrow';
 
 interface IPresentationProps {
     description: string;
@@ -37,8 +39,8 @@ const sliderSettings = {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    // nextArrow: <PrevNextButton />,
-    // prevArrow: <PrevNextButton />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
 };
 
 const PresentationSection: FC<IPresentationProps> = ({
@@ -57,6 +59,7 @@ const PresentationSection: FC<IPresentationProps> = ({
                         {t(description)}
                     </Text>
                 </Description>
+
                 <SliderWrapper>
                     <SlickSlider {...sliderSettings}>
                         {sliderData.map(({ src, name }) => (
