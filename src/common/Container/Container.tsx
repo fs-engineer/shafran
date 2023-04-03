@@ -7,7 +7,10 @@ export interface IContainerProps extends ChildrenProp {
     padding?: string;
 }
 
-const Container: FC<IContainerProps> = ({ children, padding = '0 0 0 0' }) => {
+const Container: FC<IContainerProps> = ({
+    children,
+    padding = '0 20px 0 20px',
+}) => {
     return <Box padding={padding}>{children}</Box>;
 };
 

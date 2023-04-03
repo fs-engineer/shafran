@@ -1,5 +1,6 @@
 import styled, { DefaultTheme } from 'styled-components';
 import { IContainerProps } from './Container';
+import { devSize } from '../../assets/devices';
 
 interface IBoxProps extends IContainerProps {
     theme: DefaultTheme;
@@ -7,10 +8,15 @@ interface IBoxProps extends IContainerProps {
 }
 export const Box = styled.div<IBoxProps>`
     display: flex;
-    justify-content: ${props =>
-        props.flexDirectionV ? 'center' : 'space-between'};
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: ${props => (props.flexDirectionV ? 'column' : 'row')};
-    flex-basis: 1200px;
+    flex-basis: 1240px;
     padding: ${({ padding }) => padding};
+
+    @media (min-width: ${devSize.tablet}px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 `;

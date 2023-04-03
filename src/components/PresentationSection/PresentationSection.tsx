@@ -51,7 +51,7 @@ const PresentationSection: FC<IPresentationProps> = ({
 
     return (
         <DecoratedSection>
-            <Container padding={'100px 0 100px 0'}>
+            <Container padding={'100px 20px 100px 20px'}>
                 <Description>
                     <Title>{t(title)}</Title>
                     <Text fontStyle={'italic'} size={1.5}>

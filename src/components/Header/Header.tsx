@@ -6,6 +6,7 @@ import { NavBar } from '../NavBar';
 import { Container } from '../../common';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { ContactDetails } from '../ContactDetails';
+import { LogoWrapper } from '../Logo/Logo.styled';
 
 const Header: FC = () => {
     const { width } = useWindowSize();
@@ -14,7 +15,9 @@ const Header: FC = () => {
     return (
         <HeaderStyled>
             <Container>
-                <Logo />
+                <LogoWrapper>
+                    <Logo />
+                </LogoWrapper>
                 {isShowNav ? <NavBar /> : null!}
                 <ContactDetails />
             </Container>

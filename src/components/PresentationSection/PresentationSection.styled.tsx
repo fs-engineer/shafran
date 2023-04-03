@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { SectionStyled } from '../../common/Section/Section.styled';
+import { devSize } from '../../assets/devices';
 
 export const Title = styled.h2`
     font-family: BadScript, sans-serif;
@@ -22,7 +23,13 @@ export const AccentName = styled.span`
     color: #ffa600;
 `;
 export const SliderWrapper = styled.div`
-    max-width: 600px;
+    max-width: 280px;
+
+    @media (min-width: ${devSize.tablet}px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 `;
 
 export const Image = styled.img`
