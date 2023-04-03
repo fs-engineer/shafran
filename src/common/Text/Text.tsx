@@ -8,6 +8,7 @@ export interface IText {
     color?: string;
     transform?: 'upperCase' | 'lowerCase';
     fontStyle?: 'normal' | 'italic';
+    align?: 'left' | 'right' | 'center';
 }
 
 const Text: FC<IText> = ({
@@ -15,9 +16,10 @@ const Text: FC<IText> = ({
     color = theme.font.dark,
     size = 1,
     fontStyle = 'normal',
+    align = 'left',
 }) => {
     return (
-        <Content color={color} size={size} fontStyle={fontStyle}>
+        <Content color={color} size={size} fontStyle={fontStyle} align={align}>
             {children}
         </Content>
     );

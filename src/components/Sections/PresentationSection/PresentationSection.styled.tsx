@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { SectionStyled } from '../../../common/Section/Section.styled';
 import { devSize } from '../../../assets/devices';
+import { FlexMediaWrapper } from '../../../common/FlexMediaWrapper';
 
 export const Section = styled(SectionStyled)`
     display: flex;
@@ -20,12 +21,7 @@ export const SliderWrapper = styled.div`
 export const Image = styled.img`
     border: 10px solid transparent;
 `;
-export const MediaWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+export const MediaWrapper = styled(FlexMediaWrapper)`
     @media (min-width: ${devSize.laptop}px) {
         flex-direction: row;
         justify-content: space-between;

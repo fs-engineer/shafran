@@ -5,4 +5,5 @@ export const Content = styled.p<Omit<IText, 'content'>>`
     color: ${({ color }) => color};
     font-size: ${({ size }) => size}rem;
     font-style: ${({ fontStyle }) => fontStyle};
+    text-align: ${({ align }) => align};
 `;

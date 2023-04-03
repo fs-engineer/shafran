@@ -42,8 +42,8 @@ const PresentationSection: FC = () => {
             <Container padding={'100px 20px 100px 20px'}>
                 <MediaWrapper>
                     <Description
-                        description="presentation.ourHistory"
-                        title="presentation.ourHistoryTitle"
+                        description="sections.ourHistory"
+                        title="sections.ourHistoryTitle"
                     />
                     <SliderWrapper>
                         <SlickSlider {...sliderSettings}>

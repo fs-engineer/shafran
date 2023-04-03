@@ -12,8 +12,9 @@
         "dishes": "Taste the best dishes made of selected ingredients, perfectly paired with exquisite wines.",
         "bar": "Our bar menu includes a variety of alcoholic and non-alcoholic drinks, from classic cocktails to unique signature mixes."
     },
-    "presentation": {
+    "sections": {
         "ourHistoryTitle": "A brief history of us",
-        "ourHistory": " - is a European cuisine restaurant located in the heart of Zhytomyr. Our story began in 2010 when a group of food enthusiasts decided to open a place where people could enjoy delicious food and a cozy atmosphere."
+        "ourHistory": " - is a European cuisine restaurant located in the heart of Zhytomyr. Our story began in 2010 when a group of food enthusiasts decided to open a place where people could enjoy delicious food and a cozy atmosphere.",
+        "promotion": "From 12 to 3pm, we will prepare complex lunches for you based on homemade recipes using only fresh ingredients. Our goal is to make your lunch delicious and cozy, just like home."
     }
 }
