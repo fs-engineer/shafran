@@ -34,8 +34,8 @@ const sliderSettings = {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: <PrevArrow />,
+    prevArrow: <NextArrow />,
 };
 
 const PresentationSection: FC = () => {
