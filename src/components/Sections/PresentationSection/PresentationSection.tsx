@@ -28,12 +28,15 @@ const sliderData = [
     { name: 'vintage', src: vintage },
     { name: 'woman', src: woman },
 ];
-const sliderSettings = {
+const sliderMobSettings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
+};
+const sliderSettings = {
+    ...sliderMobSettings,
     nextArrow: <PrevArrow />,
     prevArrow: <NextArrow />,
 };
@@ -44,6 +47,8 @@ const PresentationSection: FC = () => {
         width < devSize.tablet
             ? '50px 20px 50px 20px'
             : '100px 20px 100px 20px';
+    const tabletSize = width < devSize.laptop;
+
     return (
         <Section>
             <Container padding={padding}>
@@ -53,13 +58,27 @@ const PresentationSection: FC = () => {
                         title="sections.ourHistoryTitle"
                     />
                     <SliderWrapper>
-                        <SlickSlider {...sliderSettings}>
-                            {sliderData.map(({ src, name }) => (
-                                <div key={name}>
-                                    <Image src={src} alt={name} />
-                                </div>
-                            ))}
-                        </SlickSlider>
+                        {/* tablet and lower */}
+                        {tabletSize ? (
+                            <SlickSlider {...sliderMobSettings}>
+                                {sliderData.map(({ src, name }) => (
+                                    <div key={name}>
+                                        <Image src={src} alt={name} />
+                                    </div>
+                                ))}
+                            </SlickSlider>
+                        ) : null}
+
+                        {/* for laptop and higher */}
+                        {!tabletSize ? (
+                            <SlickSlider {...sliderSettings}>
+                                {sliderData.map(({ src, name }) => (
+                                    <div key={name}>
+                                        <Image src={src} alt={name} />
+                                    </div>
+                                ))}
+                            </SlickSlider>
+                        ) : null}
                     </SliderWrapper>
                 </MediaWrapper>
             </Container>
