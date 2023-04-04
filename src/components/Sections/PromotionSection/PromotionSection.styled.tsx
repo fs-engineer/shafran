@@ -14,3 +14,11 @@ export const List = styled.ul`
 export const ListItem = styled.li`
     padding: 10px;
 `;
+export const DecorationImg = styled.img<{ align: 'right' | 'left' }>`
+    position: absolute;
+    top: ${({ align }) => (align === 'right' ? 0 : 'auto')}px;
+    right: ${({ align }) => (align === 'right' ? -40 : 'auto')}px;
+    bottom: ${({ align }) => (align === 'right' ? 'auto' : 0)}px;
+    left: ${({ align }) => (align === 'right' ? 'auto' : -40)}px;
+    width: 300px;
+`;

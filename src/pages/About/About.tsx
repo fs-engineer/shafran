@@ -1,13 +1,13 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { GoogleMap } from '../../components/GoogleMap';
+import { AboutSection } from '../../components/Sections/AboutSection';
+import HistorySection from '../../components/Sections/HistorySection/HistorySection';
 
 const About = () => {
-    const { t } = useTranslation();
-
     return (
         <div>
-            <h2>{t('menu.about')}</h2>
+            <AboutSection />
+            <HistorySection />
             <GoogleMap />
         </div>
     );

@@ -1,5 +1,10 @@
 import React from 'react';
-import { List, ListItem, MediaWrapper } from './PromotionSection.styled';
+import {
+    DecorationImg,
+    List,
+    ListItem,
+    MediaWrapper,
+} from './PromotionSection.styled';
 import { Container, Text } from '../../../common';
 import pizza from '../../../assets/images/promotion/pizza_1920.jpg';
 import bowl from '../../../assets/images/promotion/bowl_1920.jpg';
@@ -8,6 +13,8 @@ import { useTranslation } from 'react-i18next';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 import { Section } from '../Section';
 import { devSize } from '../../../assets/devices';
+import source from '../../../assets/images/decorations/sauce_1920.png';
+import food from '../../../assets/images/decorations/food_1920.png';
 
 const images = [
     { src: pizza, name: 'pizza' },
@@ -42,6 +49,8 @@ const PromotionSection = () => {
                         ))}
                     </List>
                 </MediaWrapper>
+                <DecorationImg src={food} align={'right'} />
+                <DecorationImg src={source} align={'left'} />
             </Container>
         </Section>
     );

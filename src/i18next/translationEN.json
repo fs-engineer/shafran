@@ -18,5 +18,23 @@
         "promotion": "From 12 to 3pm, we will prepare complex lunches for you based on homemade recipes using only fresh ingredients. Our goal is to make your lunch delicious and cozy, just like home.",
         "ourMenuTitle": "Our head chef has prepared sophisticated dishes of various cuisines for you.",
         "ourMenu": " - we offer a menu with dishes to suit every taste and budget - from simple appetizers and soups to exquisite main courses and desserts. We constantly update our menu to offer you new tastes and combinations."
+    },
+    "about": {
+        "descriptionTitle": "A restaurant where gourmets meet with high quality and cozy atmosphere.",
+        "description": [
+            "Shafran is a cozy place located in the city center. Inside, you will find a stylish interior with soft lighting, soft chairs, and pleasant music.",
+            "Shafran is a European cuisine restaurant that uses only fresh ingredients and classic recipes. Here you can enjoy a wide selection of dishes, from soups and salads to meat and fish dishes, as well as various side dishes and desserts.",
+            "The feature of Shafran is a wide selection of dishes using local ingredients, which add an unusual taste and aroma to the dishes.",
+            "In addition, Shafran restaurant offers a rich selection of drinks - from freshly squeezed juices and fruit drinks to wine and strong alcoholic beverages.",
+            "The service at Shafran restaurant is top-notch, the staff is friendly and ready to help you with the selection of dishes and drinks. Overall, Shafran is a great place to enjoy classic European cuisine in a cozy atmosphere."
+        ],
+        "historyTitle": "Taste and quality on every plate.",
+        "history": [
+            "The owners of the restaurant \"Shafran\" are Valery and Maria, who have been living in Zhytomyr for many years. Both of them are foodies and value high-quality food, so they decided to create a restaurant that would offer its guests only the best dishes.",
+            "The idea of \"Shafran\" restaurant was born thanks to their love of European cuisine, which is rich in flavors and aromas. They wanted to create a place where guests could enjoy high-quality food, pleasant atmosphere, and excellent service.",
+            "Therefore, they began to search for the best ingredients, explore new recipes, and create a unique menu that would combine classic European dishes and unique author's creations.",
+            "The \"Shafran\" restaurant was opened in 2010 and since then has become one of the most popular restaurants in Zhytomyr. It quickly won the hearts of guests thanks to its delicious food, beautiful atmosphere, and impeccable service.",
+            "Today, the \"Shafran\" restaurant is a place where you can have a romantic dinner, celebrate a special occasion, or simply enjoy delicious food in a pleasant atmosphere. The owners of the restaurant still maintain the quality of the products and service to make guests feel at home and want to come back again and again."
+        ]
     }
 }
