@@ -5,7 +5,6 @@ import eggs from './images/aboutCarousel/eggs_1920.jpg';
 import glasses from './images/aboutCarousel/glasses_1920.jpg';
 import grill from './images/aboutCarousel/grill_1920.jpg';
 import birthday from './images/aboutCarousel/birthday_1280.jpg';
-import lantern from './images/aboutCarousel/lantern_1920.jpg';
 import pizza from './images/aboutCarousel/pizza_1920.jpg';
 import salad from './images/aboutCarousel/salad_1920.jpg';
 import barbecueImg from './images/hero/barbecue_1920.jpg';
@@ -56,14 +55,13 @@ export const heroSliderData = [
 ];
 
 export const aboutSliderData = [
+    { src: birthday, name: 'birthday' },
+    { src: pizza, name: 'pizza' },
+    { src: salad, name: 'salad' },
     { src: beef, name: 'beef' },
     { src: burger, name: 'burger' },
     { src: coffee, name: 'coffee' },
     { src: glasses, name: 'glasses' },
     { src: grill, name: 'grill' },
     { src: eggs, name: 'eggs' },
-    { src: birthday, name: 'birthday' },
-    { src: lantern, name: 'lantern' },
-    { src: pizza, name: 'pizza' },
-    { src: salad, name: 'salad' },
 ];

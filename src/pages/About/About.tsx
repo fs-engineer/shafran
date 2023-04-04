@@ -8,7 +8,7 @@ const About = () => {
         <div>
             <AboutSection />
             <HistorySection />
-            <GoogleMap />
+            {/*<GoogleMap />*/}
         </div>
     );
 };
