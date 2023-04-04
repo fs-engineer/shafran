@@ -1,21 +1,13 @@
 import React from 'react';
 import { DecorationImg, List, ListItem } from './PromotionSection.styled';
 import { Container, Text } from '../../../common';
-import pizza from '../../../assets/images/promotion/pizza_1920.jpg';
-import bowl from '../../../assets/images/promotion/bowl_1920.jpg';
-import curry from '../../../assets/images/promotion/curry_1920.jpg';
 import { useTranslation } from 'react-i18next';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 import { Section } from '../Section';
 import { devSize } from '../../../assets/devices';
 import source from '../../../assets/images/decorations/sauce_1920.png';
 import food from '../../../assets/images/decorations/food_1920.png';
-
-const images = [
-    { src: pizza, name: 'pizza' },
-    { src: bowl, name: 'bowl' },
-    { src: curry, name: 'curry' },
-];
+import { promotionGalleryData } from '../../../assets/imagesData';
 
 const PromotionSection = () => {
     const { t } = useTranslation();
@@ -37,7 +29,7 @@ const PromotionSection = () => {
                 </Text>
 
                 <List>
-                    {images.map(({ src, name }) => (
+                    {promotionGalleryData.map(({ src, name }) => (
                         <ListItem key={name}>
                             <img src={src} alt={name} />
                         </ListItem>

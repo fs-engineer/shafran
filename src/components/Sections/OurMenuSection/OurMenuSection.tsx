@@ -5,17 +5,8 @@ import { List, ListItem, MediaWrapper } from './OurMenuSection.styled';
 import { Description } from '../Description';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 import { devSize } from '../../../assets/devices';
-import meat from '../../../assets/images/ourMenu/meat_1920.jpg';
-import pasta from '../../../assets/images/ourMenu/pasta_1920.jpg';
-import pizza from '../../../assets/images/ourMenu/pizza_1920.jpg';
-import asparagus from '../../../assets/images/ourMenu/asparagus_1920.jpg';
+import { ourMenuGalleryData } from '../../../assets/imagesData';
 
-const images = [
-    { src: meat, name: 'meat' },
-    { src: pasta, name: 'pasta' },
-    { src: pizza, name: 'pizza' },
-    { src: asparagus, name: 'asparagus' },
-];
 const OurMenuSection = () => {
     const { width } = useWindowSize();
     const padding =
@@ -31,7 +22,7 @@ const OurMenuSection = () => {
                         title="sections.ourMenuTitle"
                     />
                     <List>
-                        {images.map(({ src, name }) => (
+                        {ourMenuGalleryData.map(({ src, name }) => (
                             <ListItem key={name}>
                                 <img src={src} alt={name} />
                             </ListItem>

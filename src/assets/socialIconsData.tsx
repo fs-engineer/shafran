@@ -5,6 +5,11 @@ import React from 'react';
 
 export const socialIcons = [
     {
+        name: 'phone',
+        icon: <BsPhone />,
+        link: 'tel:+380682894490',
+    },
+    {
         name: 'instagram',
         icon: <BsInstagram />,
         link: 'https://www.instagram.com/shafran_zt/',
@@ -13,11 +18,6 @@ export const socialIcons = [
         name: 'facebook',
         icon: <FaFacebookF />,
         link: 'https://www.facebook.com/shafranzt/',
-    },
-    {
-        name: 'phone',
-        icon: <BsPhone />,
-        link: 'tel:+380682894490',
     },
     {
         name: 'map',
