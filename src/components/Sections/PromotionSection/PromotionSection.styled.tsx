@@ -1,10 +1,6 @@
 import styled from 'styled-components';
+import { devSize } from '../../../assets/devices';
 
-export const MediaWrapper = styled.div`
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`;
 export const List = styled.ul`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,9 +12,21 @@ export const ListItem = styled.li`
 `;
 export const DecorationImg = styled.img<{ align: 'right' | 'left' }>`
     position: absolute;
-    top: ${({ align }) => (align === 'right' ? 0 : 'auto')}px;
+    top: ${({ align }) => (align === 'right' ? -80 : 'auto')}px;
     right: ${({ align }) => (align === 'right' ? -40 : 'auto')}px;
-    bottom: ${({ align }) => (align === 'right' ? 'auto' : 0)}px;
+    bottom: ${({ align }) => (align === 'right' ? 'auto' : -80)}px;
     left: ${({ align }) => (align === 'right' ? 'auto' : -40)}px;
-    width: 300px;
+    width: 100px;
+
+    @media (min-width: ${devSize.tablet}px) {
+        width: 150px;
+    }
+
+    @media (min-width: ${devSize.laptop}px) {
+        width: 200px;
+    }
+
+    @media (min-width: ${devSize.monitor}px) {
+        width: 300px;
+    }
 `;

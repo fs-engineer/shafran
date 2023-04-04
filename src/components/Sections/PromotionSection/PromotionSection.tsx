@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-    DecorationImg,
-    List,
-    ListItem,
-    MediaWrapper,
-} from './PromotionSection.styled';
+import { DecorationImg, List, ListItem } from './PromotionSection.styled';
 import { Container, Text } from '../../../common';
 import pizza from '../../../assets/images/promotion/pizza_1920.jpg';
 import bowl from '../../../assets/images/promotion/bowl_1920.jpg';
@@ -33,22 +28,22 @@ const PromotionSection = () => {
     return (
         <Section>
             <Container padding={padding}>
-                <MediaWrapper>
-                    <Text
-                        fontStyle={'italic'}
-                        size={width > 767 ? 1.5 : 1}
-                        align={'center'}
-                    >
-                        {t('sections.promotion')}
-                    </Text>
-                    <List>
-                        {images.map(({ src, name }) => (
-                            <ListItem key={name}>
-                                <img src={src} alt={name} />
-                            </ListItem>
-                        ))}
-                    </List>
-                </MediaWrapper>
+                <Text
+                    fontStyle={'italic'}
+                    size={width > 767 ? 1.5 : 1}
+                    align={'center'}
+                >
+                    {t('sections.promotion')}
+                </Text>
+
+                <List>
+                    {images.map(({ src, name }) => (
+                        <ListItem key={name}>
+                            <img src={src} alt={name} />
+                        </ListItem>
+                    ))}
+                </List>
+
                 <DecorationImg src={food} align={'right'} />
                 <DecorationImg src={source} align={'left'} />
             </Container>
