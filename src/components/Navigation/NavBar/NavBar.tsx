@@ -1,25 +1,15 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Menu, MenuItem, MenuLink, NavStyled } from './NavBar.styled';
 import { useTranslation } from 'react-i18next';
+import { menuListData } from '../../../assets/menuListData';
 
-interface IMenu {
-    name: string;
-    path: string;
-}
-
-const menu: Array<IMenu> = [
-    { name: 'menu.home', path: '/' },
-    { name: 'menu.menu', path: 'menu' },
-    { name: 'menu.about', path: 'about' },
-];
-
-const NavBar = () => {
+const NavBar: FC = () => {
     const { t } = useTranslation();
 
     return (
         <NavStyled>
             <Menu>
-                {menu.map(({ name, path }) => (
+                {menuListData.map(({ name, path }) => (
                     <MenuItem key={name}>
                         <MenuLink to={path}>{t(`${name}`)}</MenuLink>
                     </MenuItem>

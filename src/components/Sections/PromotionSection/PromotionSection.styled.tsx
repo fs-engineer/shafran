@@ -12,18 +12,18 @@ export const ListItem = styled.li`
 `;
 export const DecorationImg = styled.img<{ align: 'right' | 'left' }>`
     position: absolute;
-    top: ${({ align }) => (align === 'right' ? -80 : 'auto')}px;
+    top: ${({ align }) => (align === 'right' ? -90 : 'auto')}px;
     right: ${({ align }) => (align === 'right' ? -40 : 'auto')}px;
     bottom: ${({ align }) => (align === 'right' ? 'auto' : -80)}px;
     left: ${({ align }) => (align === 'right' ? 'auto' : -40)}px;
-    width: 100px;
+    width: 150px;
 
     @media (min-width: ${devSize.tablet}px) {
-        width: 150px;
+        width: 200px;
     }
 
     @media (min-width: ${devSize.laptop}px) {
-        width: 200px;
+        width: 250px;
     }
 
     @media (min-width: ${devSize.monitor}px) {

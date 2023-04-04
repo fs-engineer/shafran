@@ -1,17 +1,22 @@
 import React, { FC } from 'react';
-import { HeaderStyled } from './Header.styled';
+import { ContactDetailsWrapper, HeaderStyled } from './Header.styled';
 
 import { Logo } from '../../common/Logo';
-import { NavBar } from '../NavBar';
+import { NavBar } from '../Navigation/NavBar';
 import { Container } from '../../common';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { ContactDetails } from '../ContactDetails';
 import { LogoWrapper } from '../../common/Logo/Logo.styled';
 import { FlexMediaWrapper } from '../../common/FlexMediaWrapper';
+import { BurgerButton } from '../Navigation/BurgerButton';
+import { devSize } from '../../assets/devices';
 
-const Header: FC = () => {
+interface IProps {
+    toggleBurgerMenu: () => void;
+}
+const Header: FC<IProps> = ({ toggleBurgerMenu }) => {
     const { width } = useWindowSize();
-    const isShowNav = width > 768;
+    const isShowNav = width > devSize.tablet;
 
     return (
         <HeaderStyled>
@@ -21,7 +26,14 @@ const Header: FC = () => {
                         <Logo />
                     </LogoWrapper>
                     {isShowNav ? <NavBar /> : null!}
-                    <ContactDetails />
+                    <ContactDetailsWrapper>
+                        <ContactDetails />
+                    </ContactDetailsWrapper>
+                    {!isShowNav ? (
+                        <BurgerButton onClick={toggleBurgerMenu} />
+                    ) : (
+                        null!
+                    )}
                 </FlexMediaWrapper>
             </Container>
         </HeaderStyled>
