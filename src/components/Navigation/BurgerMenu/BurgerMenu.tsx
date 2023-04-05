@@ -22,6 +22,7 @@ const BurgerMenu: FC<IProps> = ({ isMenuOpen, closeMenu }) => {
     return (
         <MenuWrapper isMenuOpen={isMenuOpen} onClick={closeMenu}>
             <MenuList>
+                // TODO solution for a burger
                 {/*<MenuItem>*/}
                 {/*    <CloseBtn onClick={closeMenu}>*/}
                 {/*        <IoCloseSharp />*/}

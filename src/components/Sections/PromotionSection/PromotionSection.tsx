@@ -36,8 +36,9 @@ const PromotionSection = () => {
                     ))}
                 </List>
 
-                <DecorationImg src={food} align={'right'} />
-                <DecorationImg src={source} align={'left'} />
+                {/* //TODO  need solution for decoration img */}
+                {/*<DecorationImg src={food} align={'right'} />*/}
+                {/*<DecorationImg src={source} align={'left'} />*/}
             </Container>
         </Section>
     );
