@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { IProps } from './BurgerMenu';
+import { MenuLink } from '../NavBar/NavBar.styled';
 
 export const MenuWrapper = styled.div<Omit<IProps, 'closeMenu'>>`
     position: fixed;
@@ -16,8 +17,8 @@ export const MenuWrapper = styled.div<Omit<IProps, 'closeMenu'>>`
 `;
 export const CloseBtn = styled.button`
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,33 +27,6 @@ export const CloseBtn = styled.button`
     border-radius: 50%;
     font-size: 2rem;
     border: none;
-    animation: rotate360 4s linear infinite;
-    animation-delay: 6s;
-
-    @keyframes rotate360 {
-        0% {
-            transform: rotate(0deg);
-        }
-        25% {
-            transform: rotate(0deg);
-        }
-        80% {
-            transform: rotate(0deg);
-        }
-        85% {
-            transform: rotate(90deg);
-        }
-        90% {
-            transform: rotate(180deg);
-        }
-        95% {
-            transform: rotate(270deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
 `;
 export const MenuList = styled.ul`
     position: relative;
@@ -60,8 +34,23 @@ export const MenuList = styled.ul`
     justify-content: center;
     flex-direction: column;
     width: 80%;
-    height: 80vh;
-    padding: 30px 10px 0 40px;
+    padding: 40px 20px;
     background-color: ${({ theme }) => theme.background.greyTrans};
+    border: 1px solid white;
 `;
-export const MenuItem = styled.li``;
+export const MenuItem = styled.li`
+    //position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    :not(:last-child) {
+        margin-bottom: 20px;
+    }
+`;
+export const BurgerLink = styled(MenuLink)`
+    font-size: 1.5rem;
+`;
+export const ImageWrapper = styled.div`
+    width: 100px;
+`;

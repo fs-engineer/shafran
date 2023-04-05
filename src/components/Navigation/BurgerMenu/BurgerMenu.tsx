@@ -1,9 +1,15 @@
 import React, { FC } from 'react';
-import { CloseBtn, MenuItem, MenuList, MenuWrapper } from './BurgerMenu.styled';
+import {
+    BurgerLink,
+    CloseBtn,
+    ImageWrapper,
+    MenuItem,
+    MenuList,
+    MenuWrapper,
+} from './BurgerMenu.styled';
 import { ChildrenProp } from '../../../types';
 import { IoCloseSharp } from 'react-icons/io5';
 import { menuListData } from '../../../assets/menuListData';
-import { MenuLink } from '../NavBar/NavBar.styled';
 import { useTranslation } from 'react-i18next';
 
 export interface IProps extends ChildrenProp {
@@ -21,9 +27,16 @@ const BurgerMenu: FC<IProps> = ({ isMenuOpen, closeMenu }) => {
                         <IoCloseSharp />
                     </CloseBtn>
                 </MenuItem>
-                {menuListData.map(({ name, path }) => (
+                {menuListData.map(({ name, path, image }) => (
                     <MenuItem key={name}>
-                        <MenuLink to={path}>{t(name)}</MenuLink>
+                        <ImageWrapper>
+                            <img
+                                src={image?.src}
+                                alt={image?.name}
+                                width={100}
+                            />
+                        </ImageWrapper>
+                        <BurgerLink to={path}>{t(name)}</BurgerLink>
                     </MenuItem>
                 ))}
             </MenuList>
