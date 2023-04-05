@@ -39,16 +39,15 @@ export const MenuList = styled.ul`
     border: 1px solid white;
 `;
 export const MenuItem = styled.li`
-    //position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     :not(:last-child) {
         margin-bottom: 20px;
     }
 `;
 export const BurgerLink = styled(MenuLink)`
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 1.5rem;
 `;
 export const ImageWrapper = styled.div`

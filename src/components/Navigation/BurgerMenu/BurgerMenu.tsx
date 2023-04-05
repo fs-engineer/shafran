@@ -29,14 +29,16 @@ const BurgerMenu: FC<IProps> = ({ isMenuOpen, closeMenu }) => {
                 </MenuItem>
                 {menuListData.map(({ name, path, image }) => (
                     <MenuItem key={name}>
-                        <ImageWrapper>
-                            <img
-                                src={image?.src}
-                                alt={image?.name}
-                                width={100}
-                            />
-                        </ImageWrapper>
-                        <BurgerLink to={path}>{t(name)}</BurgerLink>
+                        <BurgerLink to={path}>
+                            <ImageWrapper>
+                                <img
+                                    src={image?.src}
+                                    alt={image?.name}
+                                    width={100}
+                                />
+                            </ImageWrapper>
+                            {t(name)}
+                        </BurgerLink>
                     </MenuItem>
                 ))}
             </MenuList>
