@@ -8,9 +8,13 @@ import birthday from './images/aboutCarousel/birthday_1280.jpg';
 import pizza from './images/aboutCarousel/pizza_1920.jpg';
 import salad from './images/aboutCarousel/salad_1920.jpg';
 import barbecueImg from './images/hero/barbecue_1920.jpg';
+import barbecueImgTablet from './images/hero/924x1280/barbecue_924.jpg';
 import cateringImg from './images/hero/catering_1920.jpg';
+import cateringImgTablet from './images/hero/924x1280/catering_924.jpg';
 import platterImg from './images/hero/platter_1920.jpg';
+import platterImgTablet from './images/hero/924x1280/platter_924.jpg';
 import redWineImg from './images/hero/red-wine_1920.jpg';
+import redWineImgTablet from './images/hero/924x1280/red-wine_924.jpg';
 import bar from './images/history/bar_1920.jpg';
 import bistro from './images/history/bistro_1920.jpg';
 import breakfast from './images/history/breakfast_1920.jpg';
@@ -48,10 +52,10 @@ export const presentationSliderData = [
 ];
 
 export const heroSliderData = [
-    { name: 'dishes', src: platterImg },
-    { name: 'bar', src: redWineImg },
-    { name: 'barbeque', src: barbecueImg },
-    { name: 'banquet', src: cateringImg },
+    { name: 'dishes', src: platterImg, srcTablet: barbecueImgTablet },
+    { name: 'bar', src: redWineImg, srcTablet: cateringImgTablet },
+    { name: 'barbeque', src: barbecueImg, srcTablet: platterImgTablet },
+    { name: 'banquet', src: cateringImg, srcTablet: redWineImgTablet },
 ];
 
 export const aboutSliderData = [

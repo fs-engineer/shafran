@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next';
 import { SlideBox, SliderTitle } from './Hero.styled';
 import { Section } from '../../common';
 import { heroSliderData } from '../../assets/imagesData';
+import { useWindowSize } from '../../hooks/useWindowSize';
+import { devSize } from '../../assets/devices';
 
 const sliderSettings = {
     dots: false,
@@ -21,13 +23,15 @@ const sliderSettings = {
 
 const Hero = () => {
     const { t } = useTranslation();
+    const { width } = useWindowSize();
+    const tabletSize = width < devSize.tablet;
 
     return (
         <Section>
             <SlickSlider {...sliderSettings}>
-                {heroSliderData.map(({ name, src }) => (
+                {heroSliderData.map(({ name, src, srcTablet }) => (
                     <SlideBox key={name}>
-                        <img src={src} alt={name} />
+                        <img src={tabletSize ? srcTablet : src} alt={name} />
                         <SliderTitle>{t(`hero.${name}`)}</SliderTitle>
                     </SlideBox>
                 ))}
