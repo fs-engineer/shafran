@@ -40,6 +40,16 @@ const HistorySection = () => {
         <Section>
             <Container padding={padding}>
                 <MediaWrapper>
+                    {width < devSize.tablet ? (
+                        <TextWrapper>
+                            <TitleStyled>{t('about.historyTitle')}</TitleStyled>
+                            <Paragraphs
+                                quantity={5}
+                                localPath={'about.history'}
+                                marginBottom={30}
+                            />
+                        </TextWrapper>
+                    ) : null}
                     <SliderWrapper>
                         <SlickSlider {...sliderSettings}>
                             {[...aboutSliderData]
@@ -51,14 +61,16 @@ const HistorySection = () => {
                                 ))}
                         </SlickSlider>
                     </SliderWrapper>
-                    <TextWrapper>
-                        <TitleStyled>{t('about.historyTitle')}</TitleStyled>
-                        <Paragraphs
-                            quantity={5}
-                            localPath={'about.history'}
-                            marginBottom={30}
-                        />
-                    </TextWrapper>
+                    {!(width < devSize.tablet) ? (
+                        <TextWrapper>
+                            <TitleStyled>{t('about.historyTitle')}</TitleStyled>
+                            <Paragraphs
+                                quantity={5}
+                                localPath={'about.history'}
+                                marginBottom={30}
+                            />
+                        </TextWrapper>
+                    ) : null}
                 </MediaWrapper>
             </Container>
         </Section>
