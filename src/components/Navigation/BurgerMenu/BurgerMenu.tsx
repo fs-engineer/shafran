@@ -22,11 +22,11 @@ const BurgerMenu: FC<IProps> = ({ isMenuOpen, closeMenu }) => {
     return (
         <MenuWrapper isMenuOpen={isMenuOpen} onClick={closeMenu}>
             <MenuList>
-                <MenuItem>
-                    <CloseBtn onClick={closeMenu}>
-                        <IoCloseSharp />
-                    </CloseBtn>
-                </MenuItem>
+                {/*<MenuItem>*/}
+                {/*    <CloseBtn onClick={closeMenu}>*/}
+                {/*        <IoCloseSharp />*/}
+                {/*    </CloseBtn>*/}
+                {/*</MenuItem>*/}
                 {menuListData.map(({ name, path, image }) => (
                     <MenuItem key={name}>
                         <BurgerLink to={path}>

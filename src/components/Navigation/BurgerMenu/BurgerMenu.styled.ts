@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { IProps } from './BurgerMenu';
 import { MenuLink } from '../NavBar/NavBar.styled';
+import { devSize } from '../../../assets/devices';
 
 export const MenuWrapper = styled.div<Omit<IProps, 'closeMenu'>>`
     position: fixed;
@@ -37,6 +38,14 @@ export const MenuList = styled.ul`
     padding: 40px 20px;
     background-color: ${({ theme }) => theme.background.greyTrans};
     border: 1px solid white;
+
+    @media (min-width: 430px) {
+        padding: 40px 40px;
+    }
+
+    @media (min-width: ${devSize.mobilePro}px) {
+        padding: 40px 60px;
+    }
 `;
 export const MenuItem = styled.li`
     :not(:last-child) {
@@ -48,8 +57,12 @@ export const BurgerLink = styled(MenuLink)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
+
+    @media (min-width: ${devSize.mobilePro}px) {
+        font-size: 1.5rem;
+    }
 `;
 export const ImageWrapper = styled.div`
-    width: 100px;
+    width: 80px;
 `;
