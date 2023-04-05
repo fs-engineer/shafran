@@ -27,6 +27,7 @@ export const MediaWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 200px 0 0;
 
     @media (min-width: ${devSize.tablet}px) {
         flex-direction: row;

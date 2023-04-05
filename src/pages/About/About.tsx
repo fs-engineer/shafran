@@ -5,11 +5,11 @@ import HistorySection from '../../components/Sections/HistorySection/HistorySect
 
 const About = () => {
     return (
-        <div>
+        <>
             <AboutSection />
             <HistorySection />
             {/*<GoogleMap />*/}
-        </div>
+        </>
     );
 };
 
