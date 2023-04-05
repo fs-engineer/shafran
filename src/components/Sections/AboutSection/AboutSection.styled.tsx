@@ -21,13 +21,19 @@ export const SliderWrapper = styled.div`
         max-width: 500px;
     }
 `;
+export const AboutHeader = styled.div`
+    height: 200px;
+
+    @media (min-width: ${devSize.tablet}px) {
+        height: 50px;
+    }
+`;
 export const MediaWrapper = styled.div`
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 200px 0 0;
 
     @media (min-width: ${devSize.tablet}px) {
         flex-direction: row;

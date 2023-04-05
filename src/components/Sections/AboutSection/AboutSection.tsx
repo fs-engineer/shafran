@@ -6,6 +6,7 @@ import { Section } from '../Section';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 import { devSize } from '../../../assets/devices';
 import {
+    AboutHeader,
     ImageWrapper,
     MediaWrapper,
     SliderWrapper,
@@ -39,6 +40,7 @@ const AboutSection = () => {
     return (
         <Section>
             <Container padding={padding}>
+                <AboutHeader />
                 <MediaWrapper>
                     <TextWrapper>
                         <TitleStyled>{t('about.descriptionTitle')}</TitleStyled>
