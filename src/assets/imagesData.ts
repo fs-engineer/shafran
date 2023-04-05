@@ -52,10 +52,10 @@ export const presentationSliderData = [
 ];
 
 export const heroSliderData = [
-    { name: 'dishes', src: platterImg, srcTablet: barbecueImgTablet },
-    { name: 'bar', src: redWineImg, srcTablet: cateringImgTablet },
-    { name: 'barbeque', src: barbecueImg, srcTablet: platterImgTablet },
-    { name: 'banquet', src: cateringImg, srcTablet: redWineImgTablet },
+    { name: 'dishes', src: platterImg, srcTablet: platterImgTablet },
+    { name: 'bar', src: redWineImg, srcTablet: redWineImgTablet },
+    { name: 'barbeque', src: barbecueImg, srcTablet: barbecueImgTablet },
+    { name: 'banquet', src: cateringImg, srcTablet: cateringImgTablet },
 ];
 
 export const aboutSliderData = [
