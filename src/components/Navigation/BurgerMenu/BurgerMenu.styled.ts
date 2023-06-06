@@ -12,7 +12,7 @@ export const MenuWrapper = styled.div<Omit<IProps, 'closeMenu'>>`
     right: ${({ isMenuOpen }) => (isMenuOpen ? 0 : -100)}px;
     width: ${({ isMenuOpen }) => (isMenuOpen ? '100%' : 0)};
     height: 100vh;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.68);
     transition: all 400ms ease-out;
     z-index: 10000;
 `;
