@@ -4,7 +4,7 @@ import { Button } from './LandSwitcher.styled';
 import localStorageService from '../../utils/localStorageService';
 import { language } from '../../constants';
 
-const languages: string[] = ['ua', 'en', 'ru'];
+const languages: string[] = ['ua', 'en'];
 
 const LangSwitcher = () => {
     const [langIdx, setLangIdx] = useState(
@@ -18,7 +18,7 @@ const LangSwitcher = () => {
     }, [langIdx, i18n]);
 
     const changeIdx = () => {
-        if (langIdx < 2) {
+        if (langIdx < 1) {
             setLangIdx(prevState => prevState + 1);
             return;
         }
