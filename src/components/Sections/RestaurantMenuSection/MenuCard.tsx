@@ -5,11 +5,10 @@ interface IMenuCard {
     name: string;
     imgSource: string;
     description: string;
-    weight: string | null | number;
+    weight: null | number;
     price: string | number;
-    quantity: string | null | number;
-    // TODO remove undefined
-    measurementSystem: string | null | undefined;
+    quantity: null | number;
+    measurementSystem: string | null;
 }
 const MenuCard: FC<IMenuCard> = ({
     name,
