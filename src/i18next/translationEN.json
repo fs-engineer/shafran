@@ -36,5 +36,32 @@
             "The \"Shafran\" restaurant was opened in 2010 and since then has become one of the most popular restaurants in Zhytomyr. It quickly won the hearts of guests thanks to its delicious food, beautiful atmosphere, and impeccable service.",
             "Today, the \"Shafran\" restaurant is a place where you can have a romantic dinner, celebrate a special occasion, or simply enjoy delicious food in a pleasant atmosphere. The owners of the restaurant still maintain the quality of the products and service to make guests feel at home and want to come back again and again."
         ]
+    },
+    "restaurantMenu": {
+        "porkShashlik": "Pork shashlik",
+        "barrelAssortment": "Assortment from the barrel",
+        "bruschettaSalmon": "Bruschetta with salmon",
+        "bruschettaProsciutto": "Bruschetta with prosciutto",
+        "bruschettaBrie": "Bruschetta with brie",
+        "bruschettaPork": "Bruschetta with pork",
+        "bruschettaVeal": "Bruschetta with veal",
+        "bruschettaShrimp": "Bruschetta with shrimp",
+        "chocolateFondant": "Chocolate fondant",
+        "turkeyFilletWithPeach": "Turkey fillet with peach",
+        "duckBreastBerry": "Duck breast with berry sauce",
+        "duckFruits": "Duck with fruits"
+    },
+    "menuDescription": {
+        "porkShashlik": "Juicy shish kebab with tender meat, infused with aromatic spices and grilled to perfection.",
+        "barrelAssortment": "Assortment from the barrel consists of juicy tomatoes, fresh cucumbers, and tender zucchinis, creating a perfect blend of vegetable flavors.",
+        "bruschettaSalmon": "Bruschetta with prosciutto",
+        "bruschettaBrie": "Bruschetta with brie",
+        "bruschettaPork": "Bruschetta with pork",
+        "bruschettaVeal": "Bruschetta with veal",
+        "bruschettaShrimp": "Bruschetta with shrimp",
+        "chocolateFondant": "Chocolate fondant is a delicate dessert with a hot molten chocolate center that melts in your mouth and is accompanied by a fragrant and bubbly texture on the outside.",
+        "turkeyFilletWithPeach": "Turkey fillet with peach - a tender and delicious dish that combines juicy turkey fillet with sweet notes of succulent peaches.",
+        "duckBreastBerry": "Duck breast with berry sauce - an exquisite dish where juicy duck breast perfectly combines with a flavorful and sweet sauce made from fresh berries.",
+        "duckFruits": "A dish where tender duck meat harmoniously combines with flavorful fruits, creating a rich and satisfying taste experience."
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './i18next/config';
-import { lazy, Suspense } from 'react';
+import { lazy } from 'react';
 
 import { Home } from './pages/Home';
 import { Layout } from './components/Layout';
