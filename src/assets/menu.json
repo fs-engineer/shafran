@@ -1,0 +1,265 @@
+[
+    {
+        "imgSource": "https://i.ibb.co/wwm56HF/shashlik.jpg",
+        "name": "restaurantMenu.porkShashlik",
+        "weight": 300,
+        "description": "menuDescription.porkShashlik",
+        "measurementSystem": null,
+        "price": 160,
+        "quantity": null,
+        "type": "barbecue"
+    },
+    {
+        "imgSource": "https://i.ibb.co/pvJn800/assorti-z-bochki.jpg",
+        "name": "restaurantMenu.barrelAssortment",
+        "weight": 200,
+        "description": "menuDescription.barrelAssortment",
+        "measurementSystem": null,
+        "price": 140,
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/R05LjpS/brusceti.jpg",
+        "name": "restaurantMenu.bruschettaSalmon",
+        "weight": null,
+        "description": "menuDescription.bruschettaSalmon",
+        "price": 130,
+        "quantity": 2,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/R05LjpS/brusceti.jpg",
+        "name": "restaurantMenu.bruschettaProsciutto",
+        "weight": null,
+        "description": "menuDescription.bruschettaProsciutto",
+        "price": 80,
+        "quantity": 2,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/R05LjpS/brusceti.jpg",
+        "name": "restaurantMenu.bruschettaBrie",
+        "weight": null,
+        "description": "menuDescription.bruschettaBrie",
+        "price": 80,
+        "quantity": 2,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/R05LjpS/brusceti.jpg",
+        "name": "restaurantMenu.bruschettaPork",
+        "weight": null,
+        "description": "menuDescription.bruschettaPork",
+        "price": 80,
+        "quantity": 2,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/R05LjpS/brusceti.jpg",
+        "name": "restaurantMenu.bruschettaVeal",
+        "weight": null,
+        "description": "menuDescription.bruschettaVeal",
+        "price": 80,
+        "quantity": 2,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/R05LjpS/brusceti.jpg",
+        "name": "restaurantMenu.bruschettaShrimp",
+        "weight": null,
+        "description": "menuDescription.bruschettaShrimp",
+        "price": 150,
+        "quantity": 2,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/TTLD4c2/chocolate-fondan.jpg",
+        "name": "restaurantMenu.chocolateFondant",
+        "weight": 150,
+        "description": "menuDescription.chocolateFondant",
+        "price": 180,
+        "quantity": null,
+        "type": "dessert"
+    },
+    {
+        "imgSource": "https://i.ibb.co/2PsSbsn/file-z-indyka-z-persykom.jpg",
+        "name": "restaurantMenu.turkeyFilletWithPeach",
+        "weight": 250,
+        "description": "menuDescription.turkeyFilletWithPeach",
+        "price": 190,
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/dK4j0p2/kachine-file-z-yagidnym-souce.jpg",
+        "name": "restaurantMenu.duckBreastBerry",
+        "weight": 250,
+        "description": "menuDescription.duckBreastBerry",
+        "price": 190,
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/D1zmPT0/kachka-z-fruits.jpg",
+        "name": "restaurantMenu.duckFruits",
+        "weight": 250,
+        "description": "menuDescription.duckFruits",
+        "price": 180,
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/wBNjDSV/kare-telyatiny-z-ovochami.jpg",
+        "name": "restaurantMenu.kareTelyaOvochi",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/c37D1nc/losos-zi-shpynatom.jpg",
+        "name": "restaurantMenu.lososZiShpinatom",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/Jq4B5K6/mlynci-solodki.jpg",
+        "name": "restaurantMenu.mlynciSolodki",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "dessert"
+    },
+    {
+        "imgSource": "https://i.ibb.co/M9W9wTy/mlynci-z-ikrou.jpg",
+        "name": "restaurantMenu.mlynciZIkrou",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/M9W9wTy/mlynci-z-ikrou.jpg",
+        "name": "restaurantMenu.mlynciZIkrou",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/sPxqxWw/myasni-delikatesy.jpg",
+        "name": "restaurantMenu.MyasniDelikatesi",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/dMJ7kqx/mysnyi-medalyon.jpg",
+        "name": "restaurantMenu.MysniyMedalyon",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/RyG3Q6h/pechinkivyy-rulet.jpg",
+        "name": "restaurantMenu.pechinkoviyRulet",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/PgzLH0B/profitroli-z-lososevym-mysom.jpg",
+        "name": "restaurantMenu.profit",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/Pj1YN3T/rybne-assorty.jpg",
+        "name": "restaurantMenu.profit",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/xqzM91y/salat-cezar.jpg",
+        "name": "restaurantMenu.profit",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/2tqRCTx/salat-teplyy-z-telyatynou-grill.jpg",
+        "name": "restaurantMenu.profit",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/wwm56HF/shashlik.jpg",
+        "name": "restaurantMenu.profit",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/zRNGRPG/skymbriya-grill.jpg",
+        "name": "restaurantMenu.profit",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/N70nnTT/syrna-palitra.jpg",
+        "name": "restaurantMenu.profit",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/p0YLd2C/teryn-z-indyka.jpg",
+        "name": "restaurantMenu.profit",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/60FR56p/zhyka-farshirovana.jpg",
+        "name": "restaurantMenu.profit",
+        "weight": "100",
+        "description": "blablabla",
+        "price": "160",
+        "quantity": null,
+        "type": "snacks"
+    }
+]
