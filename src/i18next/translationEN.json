@@ -49,7 +49,22 @@
         "chocolateFondant": "Chocolate fondant",
         "turkeyFilletWithPeach": "Turkey fillet with peach",
         "duckBreastBerry": "Duck breast with berry sauce",
-        "duckFruits": "Duck with fruits"
+        "duckFruits": "Duck with fruits",
+        "roastedVealRackVegetables": "Roasted Veal Rack with Vegetables",
+        "salmonSpinach": "Salmon with Spinach",
+        "sweetPancakes": "Sweet Pancakes",
+        "crepesCaviar": "Crepes with Caviar",
+        "meatDelicacies": "Meat delicacies ",
+        "meatMedallions": "Meat medallions",
+        "liverRoll": "Liver roll",
+        "profiterolesSalmon": "Salmon-filled profiteroles",
+        "fishAssortment": "Fish assortment",
+        "caesarSalad": "Caesar salad ",
+        "grilledVealSalad": "Warm salad with grilled veal",
+        "grilledMackerel": "Grilled mackerel",
+        "cheesePlatter": "Cheese platter",
+        "turkeyTerrine": "Turkey terrine",
+        "stuffedPike": "Stuffed pike"
     },
     "menuDescription": {
         "porkShashlik": "Juicy shish kebab with tender meat, infused with aromatic spices and grilled to perfection.",
@@ -62,6 +77,21 @@
         "chocolateFondant": "Chocolate fondant is a delicate dessert with a hot molten chocolate center that melts in your mouth and is accompanied by a fragrant and bubbly texture on the outside.",
         "turkeyFilletWithPeach": "Turkey fillet with peach - a tender and delicious dish that combines juicy turkey fillet with sweet notes of succulent peaches.",
         "duckBreastBerry": "Duck breast with berry sauce - an exquisite dish where juicy duck breast perfectly combines with a flavorful and sweet sauce made from fresh berries.",
-        "duckFruits": "A dish where tender duck meat harmoniously combines with flavorful fruits, creating a rich and satisfying taste experience."
+        "duckFruits": "A dish where tender duck meat harmoniously combines with flavorful fruits, creating a rich and satisfying taste experience.",
+        "roastedVealRackVegetables": "A delicious dish where tender veal rack is combined with fresh vegetables, creating a balance of flavors and aromas.",
+        "salmonSpinach": "A delicious dish where tender salmon is combined with fresh spinach, creating a flavorful harmony.",
+        "sweetPancakes": "A tasty dish where thin pancakes delight with their sweet flavor and are served with various fillings or syrups.",
+        "crepesCaviar": "A delicate dish where tender crepes beautifully complement luxurious caviar, creating an exquisite culinary experience.",
+        "meatDelicacies": "Sophisticated meat dishes that are known for their refined taste and texture.",
+        "meatMedallions": "Pieces of meat that are prepared in a special way to ensure tenderness and juiciness.",
+        "liverRoll": "A dish made from tender pieces of liver, usually lamb or pork, that are wrapped and formed into a roll.",
+        "profiterolesSalmon": "An exquisite dish made from delicate profiteroles filled with succulent salmon meat.",
+        "fishAssortment": "A delicious dish that consists of various types of fish prepared in different ways.",
+        "caesarSalad": "popular salad that consists of fresh lettuce leaves, grilled chicken, croutons, Parmesan cheese, boiled eggs, and Caesar dressing. This salad is known for its rich flavor and distinctive dressing that gives it a unique touch.",
+        "grilledVealSalad": "A delicious salad where the main component is tender veal, grilled to perfection. It is complemented with fresh vegetables, herbs, and a flavorful dressing that adds richness and appetizing appeal to the salad.",
+        "grilledMackerel": "A dish that involves grilling or frying fresh mackerel, a flavorful and aromatic sea fish. Grilled mackerel typically has a crispy skin and tender, juicy flesh.",
+        "cheesePlatter": "A dish where various types of cheeses are arranged on a board or plate, creating a colorful palette of flavors and textures.",
+        "turkeyTerrine": "dish made from tender turkey meat. It typically has a smooth, creamy texture, achieved by finely mincing the meat and combining it with other ingredients such as spices, herbs, or vegetables.",
+        "stuffedPike": "A dish in which a whole pike is filled with a stuffing and prepared using various cooking methods, imparting a distinctive flavor and texture to the dish."
     }
 }

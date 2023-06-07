@@ -3,7 +3,7 @@ import { Container, Section } from '../../../common';
 import { devSize } from '../../../assets/devices';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 
-import restaurantMenu from '../../../assets/menu.json';
+import restaurantMenu from '../../../assets/reataurantMenu.json';
 import MenuCard from './MenuCard';
 
 const RestaurantMenuSection = () => {
