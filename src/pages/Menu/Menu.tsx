@@ -1,13 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { RestaurantMenuSection } from '../../components/Sections/RestaurantMenuSection';
 
 const Menu = () => {
     const { t } = useTranslation();
-    return (
-        <div style={{ backgroundColor: 'bisque' }}>
-            <h2>{t('menu.menu')}</h2>
-        </div>
-    );
+
+    return <RestaurantMenuSection />;
 };
 
 export default Menu;
