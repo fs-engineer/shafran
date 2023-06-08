@@ -64,7 +64,13 @@
         "grilledMackerel": "Grilled mackerel",
         "cheesePlatter": "Cheese platter",
         "turkeyTerrine": "Turkey terrine",
-        "stuffedPike": "Stuffed pike"
+        "stuffedPike": "Stuffed pike",
+        "bloodSausageSkillet": "Blood sausage skillet",
+        "bigos": "Bigos",
+        "porkKnuckle": "Pork knuckle with braised cabbage",
+        "cauliflowerWithCream": "Cauliflower with cream",
+        "vealLeaver": "Veal liver",
+        "seafoodPasta": "Seafood pasta"
     },
     "menuDescription": {
         "porkShashlik": "Juicy shish kebab with tender meat, infused with aromatic spices and grilled to perfection.",
@@ -92,6 +98,12 @@
         "grilledMackerel": "A dish that involves grilling or frying fresh mackerel, a flavorful and aromatic sea fish. Grilled mackerel typically has a crispy skin and tender, juicy flesh.",
         "cheesePlatter": "A dish where various types of cheeses are arranged on a board or plate, creating a colorful palette of flavors and textures.",
         "turkeyTerrine": "dish made from tender turkey meat. It typically has a smooth, creamy texture, achieved by finely mincing the meat and combining it with other ingredients such as spices, herbs, or vegetables.",
-        "stuffedPike": "A dish in which a whole pike is filled with a stuffing and prepared using various cooking methods, imparting a distinctive flavor and texture to the dish."
+        "stuffedPike": "A dish in which a whole pike is filled with a stuffing and prepared using various cooking methods, imparting a distinctive flavor and texture to the dish.",
+        "bloodSausageSkillet": "A dish made with blood sausage that is pan-fried until golden brown. It is a popular traditional dish known for its rich flavor and aroma, and can be served as a main course or as an appetizer.",
+        "bigos": "Bigos, also known as Polish hunter's stew, is a traditional dish from Polish cuisine. It consists of sauerkraut, meat (usually pork or sausage), potatoes, and spices. It is prepared through long simmering and has a rich flavor with distinct notes of sauerkraut and meat.",
+        "porkKnuckle": "A delicious dish that combines juicy pork knuckle with tender braised cabbage. The knuckle has a crispy skin and the inside is characterized by its succulence and unique flavor.",
+        "cauliflowerWithCream": "A delightful dish where tender and flavorful cauliflower is cooked in cream. The cauliflower retains its crispiness and unique taste, enhanced by the cream that provides a rich and creamy flavor to the dish.",
+        "vealLeaver": "A delicious dish made from tender veal liver that has a delicate texture and rich flavor. It is prepared with various spices and seasonings that give it a distinctive aroma and flavor nuances.",
+        "seafoodPasta": "A hearty and flavorful dish that features fragrant pasta combined with fresh seafood. It offers a rich taste and a unique combination of textures, delivering an unforgettable culinary experience."
     }
 }

@@ -4,7 +4,8 @@ import { devSize } from '../../../assets/devices';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 
 import restaurantMenu from '../../../assets/reataurantMenu.json';
-import MenuCard from './MenuCard';
+import { MenuWrapper } from './RestaurantMenuSection.styled';
+import { FoodCard } from './FoodCard';
 
 const RestaurantMenuSection = () => {
     const [menu, setMenu] = useState(restaurantMenu);
@@ -15,33 +16,33 @@ const RestaurantMenuSection = () => {
             ? '50px 20px 50px 20px'
             : '100px 20px 100px 20px';
 
-    console.log(menu);
-
     return (
         <Section>
             <Container padding={padding}>
-                {menu.map(
-                    ({
-                        name,
-                        imgSource,
-                        description,
-                        weight,
-                        price,
-                        quantity,
-                        measurementSystem,
-                    }) => (
-                        <MenuCard
-                            key={name}
-                            name={name}
-                            imgSource={imgSource}
-                            description={description}
-                            weight={weight}
-                            price={price}
-                            quantity={quantity}
-                            measurementSystem={measurementSystem}
-                        />
-                    ),
-                )}
+                <MenuWrapper>
+                    {menu.map(
+                        ({
+                            name,
+                            imgSource,
+                            description,
+                            weight,
+                            price,
+                            quantity,
+                            measurementSystem,
+                        }) => (
+                            <FoodCard
+                                key={name}
+                                name={name}
+                                imgSource={imgSource}
+                                description={description}
+                                weight={weight}
+                                price={price}
+                                quantity={quantity}
+                                measurementSystem={measurementSystem}
+                            />
+                        ),
+                    )}
+                </MenuWrapper>
             </Container>
         </Section>
     );

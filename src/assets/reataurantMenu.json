@@ -268,5 +268,65 @@
         "price": 200,
         "quantity": null,
         "type": "snacks"
+    },
+    {
+        "imgSource": "https://i.ibb.co/X549HPW/IMG-0715.jpg",
+        "name": "restaurantMenu.bloodSausageSkillet",
+        "weight": 200,
+        "description": "menuDescription.bloodSausageSkillet",
+        "measurementSystem": null,
+        "price": 200,
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/dfmbKHn/IMG-0717.jpg",
+        "name": "restaurantMenu.bigos",
+        "weight": 200,
+        "description": "menuDescription.bigos",
+        "measurementSystem": null,
+        "price": 200,
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/ZGR61bk/IMG-0728.jpg",
+        "name": "restaurantMenu.porkKnuckle",
+        "weight": 200,
+        "description": "menuDescription.porkKnuckle",
+        "measurementSystem": null,
+        "price": 200,
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/ZBCGbfX/IMG-0738.jpg",
+        "name": "restaurantMenu.cauliflowerWithCream",
+        "weight": 200,
+        "description": "menuDescription.cauliflowerWithCream",
+        "measurementSystem": null,
+        "price": 200,
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/Dr1bQKB/IMG-0754.jpg",
+        "name": "restaurantMenu.vealLeaver",
+        "weight": 200,
+        "description": "menuDescription.vealLeaver",
+        "measurementSystem": null,
+        "price": 200,
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/Dr1bQKB/IMG-0754.jpg",
+        "name": "restaurantMenu.seafoodPasta",
+        "weight": 200,
+        "description": "menuDescription.seafoodPasta",
+        "measurementSystem": null,
+        "price": 200,
+        "quantity": null,
+        "type": "main"
     }
 ]

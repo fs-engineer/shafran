@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Wrapper } from './FoodCard.styled';
+import { Text } from '../../../../common';
 
 interface IMenuCard {
     name: string;
@@ -10,7 +12,7 @@ interface IMenuCard {
     quantity: null | number;
     measurementSystem: string | null;
 }
-const MenuCard: FC<IMenuCard> = ({
+const FoodCard: FC<IMenuCard> = ({
     name,
     imgSource,
     description,
@@ -23,15 +25,15 @@ const MenuCard: FC<IMenuCard> = ({
     const itemName = t(name);
 
     return (
-        <div>
+        <Wrapper>
             <h3>{itemName}</h3>
-            <img src={imgSource} alt={itemName} />
-            <p>{t(description)}</p>
-            <p>{price}</p>
-            {weight ? <p>{weight}</p> : null}
-            {quantity ? <p>{quantity}</p> : null}
-        </div>
+            <img src={imgSource} alt={itemName} width={320} />
+            <Text>{t(description)}</Text>
+            <Text>{price}</Text>
+            {weight ? <Text>{weight}</Text> : null}
+            {quantity ? <Text>{quantity}</Text> : null}
+        </Wrapper>
     );
 };
 
-export default MenuCard;
+export default FoodCard;
