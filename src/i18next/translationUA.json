@@ -52,6 +52,7 @@
         "duckFruits": "Качка з фруктами",
         "roastedVealRackVegetables": "Каре тялятини з овочами",
         "salmonSpinach": "Лосось зі шпинатом",
+        "sweetPancakes": "Млинці солодкі",
         "crepesCaviar": "Млинці з ікрою",
         "meatDelicacies": "М'ясні делікатеси",
         "meatMedallions": "М'ясні медальйони",
@@ -70,7 +71,7 @@
         "cauliflowerWithCream": "Цвітна капуста у вершках",
         "vealLeaver": "Печінка теляча",
         "seafoodPasta": "Паста з морепродуктами",
-        "xxlVeal": "XXL сет з телятиною",
+        "xxlBeef": "XXL сет з телятиною",
         "xxlPork": "XXL сет зі свининою "
     },
     "menuDescription": {

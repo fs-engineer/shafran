@@ -161,7 +161,7 @@
     },
     {
         "imgSource": "https://i.ibb.co/sPxqxWw/myasni-delikatesy.jpg",
-        "name": "restaurantMenu.meatDelicacies ",
+        "name": "restaurantMenu.meatDelicacies",
         "weight": 300,
         "description": "menuDescription.meatDelicacies",
         "measurementSystem": null,
