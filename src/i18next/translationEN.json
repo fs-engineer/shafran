@@ -109,5 +109,10 @@
         "seafoodPasta": "A hearty and flavorful dish that features fragrant pasta combined with fresh seafood. It offers a rich taste and a unique combination of textures, delivering an unforgettable culinary experience.",
         "xxlBeef": "It is an ideal choice for true meat lovers who want to indulge in the taste and texture of high-quality beef dishes.",
         "xxlPork": "All the dishes are prepared using the finest ingredients and seasonings to ensure a rich flavor and unmatched aroma."
+    },
+    "foodCard": {
+        "price": "Price",
+        "weight": "Weight",
+        "quantity": "Quantity"
     }
 }

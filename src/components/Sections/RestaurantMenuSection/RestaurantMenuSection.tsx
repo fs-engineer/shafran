@@ -4,12 +4,11 @@ import { devSize } from '../../../assets/devices';
 import { useWindowSize } from '../../../hooks/useWindowSize';
 
 import restaurantMenu from '../../../assets/reataurantMenu.json';
-import { MenuWrapper } from './RestaurantMenuSection.styled';
+import { MenuList } from './RestaurantMenuSection.styled';
 import { FoodCard } from './FoodCard';
 
 const RestaurantMenuSection = () => {
     const [menu, setMenu] = useState(restaurantMenu);
-
     const { width } = useWindowSize();
     const padding =
         width < devSize.tablet
@@ -19,7 +18,7 @@ const RestaurantMenuSection = () => {
     return (
         <Section>
             <Container padding={padding}>
-                <MenuWrapper>
+                <MenuList>
                     {menu.map(
                         ({
                             name,
@@ -42,7 +41,7 @@ const RestaurantMenuSection = () => {
                             />
                         ),
                     )}
-                </MenuWrapper>
+                </MenuList>
             </Container>
         </Section>
     );

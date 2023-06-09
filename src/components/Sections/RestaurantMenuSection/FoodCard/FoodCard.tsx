@@ -1,6 +1,13 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Wrapper } from './FoodCard.styled';
+import {
+    BoldText,
+    Description,
+    ImgWrapper,
+    MenuItem,
+    PriceWeightBlock,
+    Title,
+} from './FoodCard.styled';
 import { Text } from '../../../../common';
 
 interface IMenuCard {
@@ -25,14 +32,28 @@ const FoodCard: FC<IMenuCard> = ({
     const itemName = t(name);
 
     return (
-        <Wrapper>
-            <h3>{itemName}</h3>
-            <img src={imgSource} alt={itemName} width={320} />
-            <Text>{t(description)}</Text>
-            <Text>{price}</Text>
-            {weight ? <Text>{weight}</Text> : null}
-            {quantity ? <Text>{quantity}</Text> : null}
-        </Wrapper>
+        <MenuItem>
+            <ImgWrapper>
+                <img src={imgSource} alt={itemName} width={320} />
+            </ImgWrapper>
+            <Title>{itemName}</Title>
+            <Description>{t(description)}</Description>
+            <PriceWeightBlock>
+                <Text>
+                    {t('foodCard.price')}: <BoldText>{price}</BoldText>
+                </Text>
+                {weight ? (
+                    <Text>
+                        {t('foodCard.weight')}: {weight}
+                    </Text>
+                ) : null}
+                {quantity ? (
+                    <Text>
+                        {t('foodCard.quantity')}: {quantity}
+                    </Text>
+                ) : null}
+            </PriceWeightBlock>
+        </MenuItem>
     );
 };
 
