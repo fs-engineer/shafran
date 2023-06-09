@@ -328,5 +328,25 @@
         "price": 200,
         "quantity": null,
         "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/x8sqQyc/IMG-0826.jpg",
+        "name": "restaurantMenu.xxlBeef",
+        "weight": 200,
+        "description": "menuDescription.xxlBeef",
+        "measurementSystem": null,
+        "price": 200,
+        "quantity": null,
+        "type": "main"
+    },
+    {
+        "imgSource": "https://i.ibb.co/x8sqQyc/IMG-0826.jpg",
+        "name": "restaurantMenu.xxlPork",
+        "weight": 200,
+        "description": "menuDescription.xxlPork",
+        "measurementSystem": null,
+        "price": 200,
+        "quantity": null,
+        "type": "main"
     }
 ]

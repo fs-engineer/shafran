@@ -70,7 +70,9 @@
         "porkKnuckle": "Pork knuckle with braised cabbage",
         "cauliflowerWithCream": "Cauliflower with cream",
         "vealLeaver": "Veal liver",
-        "seafoodPasta": "Seafood pasta"
+        "seafoodPasta": "Seafood pasta",
+        "xxlBeef": "XXL set with beef",
+        "xxlPork": "XXL set with pork"
     },
     "menuDescription": {
         "porkShashlik": "Juicy shish kebab with tender meat, infused with aromatic spices and grilled to perfection.",
@@ -104,6 +106,8 @@
         "porkKnuckle": "A delicious dish that combines juicy pork knuckle with tender braised cabbage. The knuckle has a crispy skin and the inside is characterized by its succulence and unique flavor.",
         "cauliflowerWithCream": "A delightful dish where tender and flavorful cauliflower is cooked in cream. The cauliflower retains its crispiness and unique taste, enhanced by the cream that provides a rich and creamy flavor to the dish.",
         "vealLeaver": "A delicious dish made from tender veal liver that has a delicate texture and rich flavor. It is prepared with various spices and seasonings that give it a distinctive aroma and flavor nuances.",
-        "seafoodPasta": "A hearty and flavorful dish that features fragrant pasta combined with fresh seafood. It offers a rich taste and a unique combination of textures, delivering an unforgettable culinary experience."
+        "seafoodPasta": "A hearty and flavorful dish that features fragrant pasta combined with fresh seafood. It offers a rich taste and a unique combination of textures, delivering an unforgettable culinary experience.",
+        "xxlBeef": "It is an ideal choice for true meat lovers who want to indulge in the taste and texture of high-quality beef dishes.",
+        "xxlPork": "All the dishes are prepared using the finest ingredients and seasonings to ensure a rich flavor and unmatched aroma."
     }
 }
