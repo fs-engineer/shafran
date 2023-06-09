@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './i18next/config';
-import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 
 import { Home } from './pages/Home';
 import { Layout } from './components/Layout';
@@ -24,15 +24,15 @@ const Menu = lazy(() =>
 
 function App() {
     return (
-        // <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-            <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
-                <Route path={menu} element={<Menu />} />
-                <Route path={about} element={<About />} />
-            </Route>
-        </Routes>
-        // </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path={menu} element={<Menu />} />
+                    <Route path={about} element={<About />} />
+                </Route>
+            </Routes>
+        </Suspense>
     );
 }
 
